@@ -1,6 +1,3 @@
-<meta name="google-site-verification" content="reBosJ-2I615F6hnQVZfU_wdMGPyymB6iYdQ79G5rog" />
-
-
 
 # Fouad Al-Hadi Mahmoud Sendi
 
