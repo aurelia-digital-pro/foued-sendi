@@ -41,6 +41,7 @@
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
     pre { background: #f0f0f0; padding: 10px; overflow-x: auto; }
+    #system-graph { width: 100%; height: 400px; margin: 0; }
     @media (max-width: 600px) {
       header h1 { font-size: 1.5em; }
       header h2 { font-size: 1em; }
@@ -53,6 +54,63 @@
     <h1>Fouad Al-Hadi Mahmoud Sendi</h1>
     <h2>Digital Systems Architect | Autonomous Systems Designer | Sovereign Software Operator</h2>
   </header>
+
+  <!-- Interactive System Graph -->
+  <div id="system-graph"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth/400, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setSize(window.innerWidth, 400);
+    document.getElementById("system-graph").appendChild(renderer.domElement);
+
+    const nodeGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+    const nodeMaterial = new THREE.MeshBasicMaterial({color: 0x0066cc});
+    const labels = ["Observation","Measurement","Decision","Action","Verification"];
+    const nodes = [];
+
+    const positions = [
+      [-2,0,0], [-1,1,0], [0,0,0], [1,-1,0], [2,0,0]
+    ];
+    positions.forEach((pos,i) => {
+      const node = new THREE.Mesh(nodeGeometry, nodeMaterial);
+      node.position.set(...pos);
+      scene.add(node);
+      nodes.push(node);
+
+      // إضافة نص لكل عقدة
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      context.font = '20px Arial';
+      context.fillStyle = '#333';
+      context.fillText(labels[i], 10, 50);
+      const texture = new THREE.CanvasTexture(canvas);
+      const spriteMaterial = new THREE.SpriteMaterial({map: texture});
+      const sprite = new THREE.Sprite(spriteMaterial);
+      sprite.scale.set(2,1,1);
+      sprite.position.set(pos[0], pos[1]+0.5, pos[2]);
+      scene.add(sprite);
+    });
+
+    const lineMaterial = new THREE.LineBasicMaterial({color: 0x333333});
+    for(let i=0; i<nodes.length-1; i++){
+      const points = [];
+      points.push(nodes[i].position);
+      points.push(nodes[i+1].position);
+      const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
+      const line = new THREE.Line(lineGeometry, lineMaterial);
+      scene.add(line);
+    }
+
+    camera.position.z = 5;
+    function animate(){
+      requestAnimationFrame(animate);
+      scene.rotation.y += 0.002;
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
 
   <div class="container">
     <h3>About</h3>
@@ -103,38 +161,3 @@
       <li>Traceability: Every operation must be traceable to its origin</li>
       <li>Determinism: Same input leads to predictable system behavior</li>
       <li>Modularity: Systems are decomposed into independent functional units</li>
-      <li>Observability: Every meaningful state must be measurable</li>
-      <li>Validation Gates: Progress requires explicit verification</li>
-    </ul>
-
-    <h3>Engineering Model</h3>
-    <p>Systems are designed as operational graphs rather than static applications:</p>
-    <ul>
-      <li>Inputs are explicitly defined</li>
-      <li>Processing boundaries are isolated</li>
-      <li>Outputs are observable and structured</li>
-      <li>State transitions are tracked and verifiable</li>
-    </ul>
-
-    <h3>Skills & Technical Domains</h3>
-    <ul>
-      <li>Systems Engineering: Distributed system design, event-driven architecture, modular decomposition</li>
-      <li>Backend & Infrastructure: Node.js, API design, PostgreSQL data modeling</li>
-      <li>Frontend Systems: React + Vite, operational dashboards, system control interfaces</li>
-      <li>AI & System Orchestration: Multi-agent design, context-driven reasoning, AI-assisted workflow orchestration</li>
-      <li>Architectural Philosophy: Offline-first design, sovereign data ownership, deterministic execution frameworks</li>
-    </ul>
-
-    <h3>Proofs & Systems Evidence</h3>
-    <p>Active Deployments:</p>
-    <ul>
-      <li><a href="https://aurelia-v6.vercel.app/" target="_blank">Aurelia V6</a></li>
-      <li><a href="https://khazna-sigma.vercel.app/" target="_blank">Khazna Sigma</a></li>
-      <li><a href="https://commerce-main-cyan.vercel.app/" target="_blank">Commerce Main Cyan</a></li>
-      <li><a href="https://gitcoin-co-30.vercel.app/apps" target="_blank">Gitcoin Apps</a></li>
-    </ul>
-    <p>Identity & External Presence:</p>
-    <p><a href="https://www.producthunt.com/" target="_blank">Product Hunt</a></p>
-  </div>
-</body>
-</html>
