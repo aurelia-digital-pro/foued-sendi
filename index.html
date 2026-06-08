@@ -1,170 +1,330 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect</title> <meta name="description" content="Digital Systems Architect | Autonomous Systems Designer | Sovereign Software Operator. I design and operate structured digital systems that transform complex operational requirements into deterministic, traceable execution models."> <meta name="keywords" content="Fouad Sendi, Fouad Al-Hadi Mahmoud Sendi, Digital Systems Architect, Autonomous Systems Designer, Aegion OS, SAAD, Sovereign Software Operator"> <meta name="author" content="Fouad Al-Hadi Mahmoud Sendi"> <meta property="og:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect"> <meta property="og:description" content="Autonomous Systems Designer | Sovereign Software Operator | Specialist in offline-first AI systems and Aegion OS."> <meta property="og:type" content="website"> <meta property="og:url" content="https://aurelia-digital-pro.github.io/foued-sendi/"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Fouad Al-Hadi Mahmoud Sendi","jobTitle":"Digital Systems Architect","description":"I design and operate structured digital systems that transform complex operational requirements into deterministic, traceable execution models.","url":"https://aurelia-digital-pro.github.io/foued-sendi/","sameAs":["https://github.com/aurelia-digital-pro/foued-sendi","https://www.producthunt.com/@foued_sendi"]}</script> <style> *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} :root{ --p:#0066cc;--pa:rgba(0,102,204,0.35);--pd:rgba(0,102,204,0.18); --bg:#03070f;--bg2:#060d1a;--bg3:#080f1e; --fg:#ffffff;--fd:rgba(255,255,255,0.58);--fm:rgba(255,255,255,0.32); --mono:'Space Mono','Courier New',monospace; --display:'Syncopate','Arial Black',sans-serif; } html{scroll-behavior:smooth} body{font-family:var(--mono);background:var(--bg);color:var(--fg);line-height:1.6;overflow-x:hidden;min-height:100vh} body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(to right,rgba(255,255,255,0.038) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,0.038) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0} #scan{position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.028) 2px,rgba(0,0,0,0.028) 4px);pointer-events:none;z-index:9999;animation:scanmove 10s linear infinite} @keyframes scanmove{0%{background-position:0 0}100%{background-position:0 120px}}
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.75rem 2.5rem;border-bottom:1px solid rgba(0,102,204,0.18);background:rgba(3,7,15,0.85);backdrop-filter:blur(14px)}
-.nav-brand{font-family:var(--display);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--fg);opacity:.75}
-.nav-clock{font-size:.65rem;letter-spacing:.12em;color:var(--p);opacity:.9}
-.nav-status{display:flex;align-items:center;gap:.35rem;font-size:.6rem;letter-spacing:.12em;color:#22c55e;text-transform:uppercase}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect</title>
+
+<meta name="description" content="Digital Systems Architect | Autonomous Systems Designer | Sovereign Software Operator. I design and operate structured digital systems that transform complex operational requirements into deterministic, traceable execution models.">
+<meta name="keywords" content="Fouad Sendi, Fouad Al-Hadi Mahmoud Sendi, Digital Systems Architect, Autonomous Systems Designer, Aegion OS, SAAD, Sovereign Software Operator, Aurelia V6, Khazna Sigma">
+<meta name="author" content="Fouad Al-Hadi Mahmoud Sendi">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect">
+<meta property="og:description" content="Autonomous Systems Designer | Sovereign Software Operator | Specialist in offline-first AI systems and Aegion OS.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aurelia-digital-pro.github.io/foued-sendi/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Fouad Al-Hadi Mahmoud Sendi",
+  "jobTitle":"Digital Systems Architect",
+  "description":"I design and operate structured digital systems that transform complex operational requirements into deterministic, traceable execution models.",
+  "url":"https://aurelia-digital-pro.github.io/foued-sendi/",
+  "sameAs":[
+    "https://github.com/aurelia-digital-pro/foued-sendi",
+    "https://www.producthunt.com/@foued_sendi"
+  ]
+}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --p:#0066cc;--bg:#03070f;--fg:#fff;--fd:rgba(255,255,255,.6);
+  --mono:'Space Mono',monospace;--display:'Syncopate',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--mono);overflow-x:hidden}
+#scan{position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03)2px,rgba(0,0,0,.03)4px);animation:scanmove 10s linear infinite;pointer-events:none;z-index:9999}
+@keyframes scanmove{0%{transform:translateY(0)}100%{transform:translateY(120px)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;padding:.75rem 2rem;background:rgba(3,7,15,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,102,204,.2)}
+.nav-brand{font-family:var(--display);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase}
+.nav-status{display:flex;align-items:center;gap:.35rem;font-size:.6rem;color:#22c55e;text-transform:uppercase}
 .nav-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s ease infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.78)}}
-
-/* HERO */
-#hero{position:relative;width:100%;min-height:100vh;overflow:hidden;display:flex;flex-direction:column}
-#node-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-#identity{position:relative;z-index:10;padding:9rem 3.5rem 3rem;pointer-events:none;max-width:760px}
-@media(max-width:640px){#identity{padding:7rem 1.5rem 2rem}}
-
-#identity h1{font-family:var(--display);font-size:clamp(2rem,5.5vw,4.2rem);font-weight:700;line-height:1.08;text-transform:uppercase;letter-spacing:-.01em;color:var(--fg);opacity:0;transform:translateY(28px);animation:fadeup .9s ease forwards .15s}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+#hero{position:relative;min-height:100vh}
+#node-canvas{position:absolute;inset:0;width:100%;height:100%}
+#identity{position:relative;z-index:10;padding:9rem 3rem 3rem;max-width:760px;pointer-events:none}
+#identity h1{font-family:var(--display);font-size:clamp(2rem,5.5vw,4.2rem);font-weight:700;line-height:1.08;text-transform:uppercase}
 #identity h1 em{font-style:normal;color:var(--p);display:block;font-size:.82em}
-.tw-wrap{margin-top:1.25rem;min-height:3rem;opacity:0;animation:fadein 1s ease forwards .65s}
-#tw{font-size:clamp(.62rem,1.4vw,.82rem);text-transform:uppercase;letter-spacing:.16em;color:rgba(0,153,255,.78)}
-#cur{display:inline-block;width:7px;height:.95em;background:var(--p);margin-left:3px;vertical-align:middle;animation:blink 1s step-end infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.badges{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.75rem;opacity:0;animation:fadein 1s ease forwards 1.3s;pointer-events:auto}
-.badge{display:flex;align-items:center;gap:.45rem;border:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,.42);padding:.28rem .72rem;font-size:.65rem;letter-spacing:.1em;color:rgba(255,255,255,.72)}
-.bdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;animation:pulse 2s ease infinite}
-.bdot.green{background:#22c55e}
-.bdot.blue{background:var(--p)}
-
-/* NODE PANEL */
-#npanel{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:50;border:1px solid rgba(0,102,204,.6);background:rgba(0,5,15,.94);box-shadow:0 0 30px rgba(0,102,204,.32);padding:1.2rem 1.5rem;width:290px;font-family:var(--mono);display:none}
+#tw{font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;color:rgba(0,153,255,.8);min-height:1.2rem;margin-top:1rem}
+#cur{display:inline-block;width:7px;height:.95em;background:var(--p);margin-left:3px;animation:blink 1s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+.hstat{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.75rem;pointer-events:auto}
+.badge{display:flex;align-items:center;gap:.45rem;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.4);padding:.28rem .72rem;font-size:.65rem;letter-spacing:.1em}
+.bdot{width:6px;height:6px;border-radius:50%;animation:pulse 2s ease infinite}
+.bdot.green{background:#22c55e}.bdot.blue{background:var(--p)}
+#npanel{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:50;border:1px solid rgba(0,102,204,.6);background:rgba(0,5,15,.94);box-shadow:0 0 30px rgba(0,102,204,.32);padding:1.2rem 1.5rem;width:290px;display:none}
 #npanel.on{display:block}
-#nptag{font-size:.6rem;color:rgba(0,102,204,.65);text-transform:uppercase;letter-spacing:.16em;margin-bottom:.35rem}
-#nptitle{color:var(--fg);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.45rem}
+#nptag{font-size:.6rem;color:rgba(0,102,204,.65);text-transform:uppercase;letter-spacing:.16em}
+#nptitle{color:var(--fg);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin:.35rem 0}
 #npdesc{color:var(--fd);font-size:.78rem}
-#npclose{margin-top:.7rem;font-size:.68rem;color:var(--p);cursor:pointer;background:none;border:none;font-family:var(--mono);padding:0;letter-spacing:.05em;transition:color .2s}
-#npclose:hover{color:var(--fg)}
-
-/* MAIN */
-main{position:relative;z-index:10;background:rgba(0,0,0,.52);backdrop-filter:blur(14px);border-top:1px solid rgba(0,102,204,.2)}
-
+#npclose{margin-top:.7rem;font-size:.68rem;color:var(--p);cursor:pointer;background:none;border:none;font-family:var(--mono)}
+main{position:relative;z-index:10;background:rgba(0,0,0,.5);backdrop-filter:blur(14px);border-top:1px solid rgba(0,102,204,.2)}
 .sec{max-width:1200px;margin:0 auto;padding:5rem 3rem}
-@media(max-width:640px){.sec{padding:3rem 1.5rem}}
-.sec+.sec{border-top:1px solid rgba(255,255,255,.038)}
-.sec-hd{display:inline-block;border-bottom:2px solid rgba(0,102,204,.32);padding-bottom:.65rem;margin-bottom:3rem}
-.sec-title{font-family:var(--display);font-size:clamp(1rem,2.2vw,1.4rem);text-transform:uppercase;letter-spacing:.22em;color:var(--fg)}
-.sec-sub{font-size:.75rem;color:var(--fm);text-transform:uppercase;letter-spacing:.14em;margin-top:.4rem}
-
-/* PROOF CARDS */
+.sec+.sec{border-top:1px solid rgba(255,255,255,.04)}
+.sec-hd{display:inline-block;border-bottom:2px solid rgba(0,102,204,.3);padding-bottom:.65rem;margin-bottom:3rem}
+.sec-title{font-family:var(--display);font-size:1.4rem;text-transform:uppercase;letter-spacing:.22em}
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.proof-card{border:1px solid rgba(0,102,204,.22);background:rgba(0,0,0,.38);padding:1.4rem 1.2rem;position:relative;overflow:hidden;transition:box-shadow .3s,border-color .3s}
-.proof-card:hover{border-color:rgba(0,102,204,.55);box-shadow:0 0 22px rgba(0,102,204,.22)}
-.proof-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,rgba(0,102,204,.55),transparent);opacity:0;transition:opacity .3s}
-.proof-card:hover::after{opacity:1}
-.pc-icon{font-size:1.5rem;margin-bottom:.75rem;filter:drop-shadow(0 0 8px rgba(0,102,204,.6))}
-.pc-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--fg);margin-bottom:.4rem}
+.proof-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1.4rem;transition:.3s}
+.proof-card:hover{border-color:rgba(0,102,204,.6);box-shadow:0 0 22px rgba(0,102,204,.2)}
+.pc-icon{font-size:1.5rem;margin-bottom:.75rem}
+.pc-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
 .pc-text{font-size:.7rem;color:var(--fd);line-height:1.65}
-
-/* PRINCIPLES */
-.prin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.9rem}
-.prin{display:flex;align-items:flex-start;gap:.9rem;padding:1.35rem 1.2rem;border:1px solid rgba(255,255,255,.05);background:rgba(0,0,0,.38);position:relative;overflow:hidden;transition:background .25s}
-.prin:hover{background:rgba(0,0,0,.6)}
-.prin::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:rgba(0,102,204,.22);transition:background .25s}
-.prin:hover::before{background:var(--p)}
-.pnum{color:var(--p);font-size:1rem;font-weight:700;opacity:.4;flex-shrink:0;transition:opacity .25s}
-.prin:hover .pnum{opacity:1}
-.ptxt{color:rgba(255,255,255,.72);font-size:.85rem;transition:color .25s}
-.prin:hover .ptxt{color:var(--fg)}
-
-/* PIPELINE */
-.pipe{display:flex;flex-wrap:wrap;align-items:stretch;gap:.5rem;margin-top:.5rem}
-.pstage{flex:1;min-width:120px;border:1px solid rgba(0,102,204,.38);background:var(--bg2);padding:1.15rem .9rem;display:flex;flex-direction:column;align-items:center;gap:.35rem;text-align:center;box-shadow:0 0 12px rgba(0,102,204,.14);transition:box-shadow .3s,border-color .3s}
-.pstage:hover{border-color:rgba(0,102,204,.7);box-shadow:0 0 22px rgba(0,102,204,.28)}
-.psnum{font-size:.58rem;color:rgba(0,102,204,.62);text-transform:uppercase;letter-spacing:.14em}
-.psname{font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.85rem}
-.pstraits{font-size:.58rem;color:var(--fm);text-transform:uppercase;letter-spacing:.1em;line-height:1.75;border-top:1px solid rgba(255,255,255,.07);padding-top:.45rem;width:100%}
-.parr{display:flex;align-items:center;color:rgba(0,102,204,.48);font-size:1.1rem;align-self:center}
-@media(max-width:680px){.pipe{flex-direction:column}.parr{transform:rotate(90deg);align-self:center}}
-
-/* SYSTEMS */
-.sys-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.4rem}
-.sysp{border:1px solid rgba(0,102,204,.28);background:rgba(0,0,0,.58);padding:1.4rem;display:flex;flex-direction:column;position:relative;overflow:hidden;box-shadow:0 0 16px rgba(0,102,204,.1);transition:box-shadow .3s}
-.sysp:hover{box-shadow:0 0 28px rgba(0,102,204,.26)}
-.spbadge{position:absolute;top:.55rem;right:.7rem;font-size:.58rem;color:rgba(0,102,204,.42);letter-spacing:.12em}
-.sptitle{color:var(--p);font-size:.95rem;font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:.55rem;margin-bottom:.65rem}
-.sdot{width:6px;height:6px;background:var(--p);flex-shrink:0;animation:pulse 2s ease infinite}
-.spsub{font-size:.74rem;color:var(--fd);margin-bottom:1.15rem}
-.splist{list-style:none;font-size:.68rem;color:rgba(255,255,255,.62);margin-bottom:1.4rem;flex:1}
-.splist li{display:flex;gap:.45rem;padding:.22rem 0}
-.splist li::before{content:'>';color:rgba(0,102,204,.48);flex-shrink:0}
-.splinks{border-top:1px solid rgba(255,255,255,.07);padding-top:.9rem;margin-top:auto}
-.splabel{font-size:.58rem;color:var(--fm);text-transform:uppercase;letter-spacing:.15em;margin-bottom:.45rem}
-.splink{display:flex;align-items:center;justify-content:space-between;padding:.38rem .45rem;font-size:.68rem;color:var(--p);text-decoration:none;border:1px solid transparent;transition:background .2s,border-color .2s;letter-spacing:.04em}
-.splink:hover{background:rgba(0,102,204,.1);border-color:rgba(0,102,204,.28)}
-.spcta{display:flex;align-items:center;justify-content:space-between;padding:.7rem .9rem;font-size:.68rem;font-family:var(--mono);color:var(--fg);text-decoration:none;background:rgba(0,102,204,.2);letter-spacing:.12em;text-transform:uppercase;font-weight:700;transition:background .2s;margin-top:auto}
-.spcta:hover{background:var(--p)}
-.spclassified{margin-top:auto;border:1px dashed rgba(255,255,255,.16);background:rgba(255,255,255,.03);font-size:.58rem;text-align:center;color:var(--fm);text-transform:uppercase;letter-spacing:.15em;padding:.7rem}
-
-/* TIMELINE */
-.timeline{position:relative;padding-left:2rem}
-.timeline::before{content:'';position:absolute;left:.45rem;top:.5rem;bottom:.5rem;width:1px;background:linear-gradient(to bottom,transparent,rgba(0,102,204,.5),rgba(0,102,204,.5),transparent)}
-.titem{position:relative;margin-bottom:2rem;padding-left:1.5rem}
-.titem::before{content:'';position:absolute;left:-1.58rem;top:.45rem;width:10px;height:10px;border:1px solid rgba(0,102,204,.7);background:var(--bg);box-shadow:0 0 10px rgba(0,102,204,.4)}
-.titem:hover::before{background:var(--p)}
-.tyear{font-size:.6rem;color:var(--p);text-transform:uppercase;letter-spacing:.14em;margin-bottom:.25rem}
-.tname{font-size:.88rem;font-weight:700;color:var(--fg);margin-bottom:.3rem;text-transform:uppercase;letter-spacing:.05em}
-.tdesc{font-size:.72rem;color:var(--fd);line-height:1.65}
-
-/* FOOTER */
-footer{position:relative;z-index:10;border-top:1px solid rgba(0,102,204,.18);padding:2.5rem 1.5rem;text-align:center;font-family:var(--mono);font-size:.67rem;color:var(--fm)}
+.repo{border:1px solid rgba(0,102,204,.3);background:rgba(0,0,0,.4);padding:1.5rem}
+.repo-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.repo-name{font-family:var(--display);font-size:.9rem;color:var(--p)}
+.repo-tag{display:inline-block;border:1px solid rgba(0,102,204,.4);color:var(--p);font-size:.6rem;padding:.2rem .5rem;margin:.15rem;letter-spacing:.1em}
+.repo-btn{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,102,204,.2);border:1px solid rgba(0,102,204,.5);color:var(--fg);text-decoration:none;padding:.5rem 1rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-top:1rem}
+.dep-table{width:100%;border-collapse:collapse;font-size:.75rem}
+.dep-table th{text-align:left;padding:.6rem;border-bottom:1px solid rgba(0,102,204,.3);color:rgba(0,102,204,.8);text-transform:uppercase;letter-spacing:.15em}
+.dep-table td{padding:.8rem .6rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.dep-table a{color:var(--p);text-decoration:none}
+.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#22c55e;margin-right:.4rem}
+.model-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.5rem}
+.mstage{border:1px solid rgba(0,102,204,.4);background:#060d1a;padding:1rem;text-align:center}
+.msnum{font-size:.58rem;color:rgba(0,102,204,.6);text-transform:uppercase}
+.msname{font-weight:700;text-transform:uppercase;font-size:.85rem;margin:.35rem 0}
+.stack-table{width:100%;font-size:.75rem}
+.stack-table td{padding:.5rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.stack-table td:first-child{color:rgba(0,102,204,.8);width:140px}
+footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:center;font-size:.67rem;color:rgba(255,255,255,.4)}
 .flinks{display:flex;justify-content:center;gap:2rem;margin-bottom:1rem}
-.flinks a{color:var(--fm);text-decoration:none;text-transform:uppercase;letter-spacing:.15em;transition:color .2s}
+.flinks a{color:rgba(255,255,255,.4);text-decoration:none;text-transform:uppercase;letter-spacing:.15em}
 .flinks a:hover{color:var(--p)}
-
-/* SCROLL REVEALS */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
 .rv.in{opacity:1;transform:none}
-.rv.fx{opacity:0;transform:translateX(-22px)}
-.rv.fx.in{opacity:1;transform:none}
-.rv.sc{opacity:0;transform:scale(.92)}
-.rv.sc.in{opacity:1;transform:none}
-
-@keyframes fadeup{to{opacity:1;transform:translateY(0)}}
-@keyframes fadein{to{opacity:1}}
 </style>
+</head>
+<body>
+<div id="scan"></div>
+<nav>
+  <div class="nav-brand">Fouad Al-Hadi Mahmoud Sendi</div>
+  <div class="nav-status"><span class="nav-dot"></span>System Online</div>
+  <div id="clock">--:--:--</div>
+</nav>
 
-</head> <body> <div id="scan"></div> <!-- NAV --> <nav> <div class="nav-brand">F.A.M. Sendi // Systems</div> <div class="nav-status"><span class="nav-dot"></span>System Online</div> <div class="nav-clock" id="clock">--:--:--</div> </nav> <!-- HERO --> <section id="hero"> <canvas id="node-canvas"></canvas> <div id="identity"> <h1>Fouad Al-Hadi<em>Mahmoud Sendi</em></h1> <div class="tw-wrap"><span id="tw"></span><span id="cur"></span></div> <div class="badges"> <div class="badge"><span class="bdot green"></span>Execution Active</div> <div class="badge"><span class="bdot blue"></span>Memory Persistent</div> <div class="badge"><span class="bdot green"></span>Systems Online</div> </div> </div> <div id="npanel"> <div id="nptag">Node Active</div> <div id="nptitle"></div> <div id="npdesc"></div> <button id="npclose">[ CLOSE ]</button> </div> </section> <!-- MAIN --> <main> <!-- PROOF SIGNALS --> <div class="sec"> <div class="sec-hd rv"><h2 class="sec-title">Identity Proof</h2><p class="sec-sub">What this page makes visible</p></div> <div class="proof-grid"> <div class="proof-card rv" style="transition-delay:.04s"> <div class="pc-icon">⬡</div> <div class="pc-title">System Architecture</div> <div class="pc-text">Designs multi-agent systems with deterministic execution models, traceability layers, and modular composition principles.</div> </div> <div class="proof-card rv" style="transition-delay:.09s"> <div class="pc-icon">◈</div> <div class="pc-title">Autonomous Intelligence</div> <div class="pc-text">Builds AI systems that operate without continuous human input — persistent, adaptive, observable, and verifiable at every cycle.</div> </div> <div class="proof-card rv" style="transition-delay:.14s"> <div class="pc-icon">▣</div> <div class="pc-title">Sovereign Infrastructure</div> <div class="pc-text">Architects offline-first, vault-based execution environments where data ownership is absolute and operations are local-first.</div> </div> <div class="proof-card rv" style="transition-delay:.19s"> <div class="pc-icon">◎</div> <div class="pc-title">Operational Philosophy</div> <div class="pc-text">Every system embodies a structured thinking model: Origin → Observation → Decision → Action → Verification → Impact.</div> </div> </div> </div> <!-- EXECUTION PRINCIPLES --> <div class="sec"> <div class="sec-hd rv"><h2 class="sec-title">Execution Principles</h2><p class="sec-sub">Engineering axioms — non-negotiable</p></div> <div class="prin-grid"> <div class="prin rv fx" style="transition-delay:.04s"><div class="pnum">01</div><div class="ptxt">Intelligence is operational, not abstract — it must produce traceable outputs in the real world</div></div> <div class="prin rv fx" style="transition-delay:.1s"><div class="pnum">02</div><div class="ptxt">Execution is traceable end-to-end — every decision has an origin and a verifiable result</div></div> <div class="prin rv fx" style="transition-delay:.16s"><div class="pnum">03</div><div class="ptxt">Architecture is modular, observable, and verifiable — no black-box systems</div></div> <div class="prin rv fx" style="transition-delay:.22s"><div class="pnum">04</div><div class="ptxt">Data ownership remains sovereign and user-controlled — no dependency on external custodians</div></div> </div> </div> <!-- PIPELINE --> <div class="sec"> <div class="sec-hd rv"><h2 class="sec-title">Execution Pipeline</h2><p class="sec-sub">Universal decision-to-action model</p></div> <div class="pipe"> <div class="pstage rv sc" style="transition-delay:.04s"><div class="psnum">01</div><div class="psname">Observation</div><div class="pstraits">Intake<br>Sensing<br>Capture</div></div> <div class="parr">&rarr;</div> <div class="pstage rv sc" style="transition-delay:.1s"><div class="psnum">02</div><div class="psname">Measurement</div><div class="pstraits">Quantify<br>Delta<br>State</div></div> <div class="parr">&rarr;</div> <div class="pstage rv sc" style="transition-delay:.16s"><div class="psnum">03</div><div class="psname">Decision</div><div class="pstraits">Evaluate<br>Logic<br>Branch</div></div> <div class="parr">&rarr;</div> <div class="pstage rv sc" style="transition-delay:.22s"><div class="psnum">04</div><div class="psname">Action</div><div class="pstraits">Execute<br>Mutate<br>Deploy</div></div> <div class="parr">&rarr;</div> <div class="pstage rv sc" style="transition-delay:.28s"><div class="psnum">05</div><div class="psname">Verification</div><div class="pstraits">Trace<br>Audit<br>Confirm</div></div> </div> </div> <!-- OPERATIONAL TIMELINE --> <div class="sec"> <div class="sec-hd rv"><h2 class="sec-title">Build Timeline</h2><p class="sec-sub">Public engineering milestones</p></div> <div class="timeline"> <div class="titem rv" style="transition-delay:.04s"> <div class="tyear">Ongoing</div> <div class="tname">Aegion OS — Autonomous AI Operating System</div> <div class="tdesc">Multi-agent architecture. Persistent memory layer. Evolution-based improvement cycles. Operational system dashboard. Modular AI-driven execution.</div> </div> <div class="titem rv" style="transition-delay:.1s"> <div class="tyear">Active</div> <div class="tname">SAAD — Sovereign Autonomous Architecture Design</div> <div class="tdesc">Private local-first execution environment. Vault-based persistent storage. Deterministic state management. Human-owned data architecture. Offline-first sovereignty.</div> </div> <div class="titem rv" style="transition-delay:.16s"> <div class="tyear">Deployed</div> <div class="tname">Aurelia V6 — Interface Layer</div> <div class="tdesc">Live production interface system deployed on vercel infrastructure. Represents the public execution layer of the Aegion ecosystem.</div> </div> <div class="titem rv" style="transition-delay:.22s"> <div class="tyear">Deployed</div> <div class="tname">Khazna Sigma — Data Vault Interface</div> <div class="tdesc">Operational data management interface. Structured information architecture. Persistent state tracking layer.</div> </div> <div class="titem rv" style="transition-delay:.28s"> <div class="tyear">Active</div> <div class="tname">Commerce Main Cyan — Commerce Layer</div> <div class="tdesc">Commerce execution interface built within the modular system architecture framework. Fully deployed and operational.</div> </div> </div> </div> <!-- SYSTEM MODULES --> <div class="sec"> <div class="sec-hd rv"><h2 class="sec-title">System Modules</h2><p class="sec-sub">Public ecosystem overview</p></div> <div class="sys-grid">
-<div class="sysp rv" style="transition-delay:.06s">
-  <div class="spbadge">MOD-01</div>
-  <div class="sptitle"><span class="sdot"></span>Aegion OS<small style="font-size:.6rem;color:rgba(255,255,255,.38);font-weight:400;margin-left:.3rem">(Public)</small></div>
-  <p class="spsub">Multi-agent autonomous AI operating system.</p>
-  <ul class="splist">
-    <li>Multi-agent system architecture</li>
-    <li>Persistent memory layer</li>
-    <li>Evolution-based improvement cycles</li>
-    <li>Operational system dashboard</li>
-    <li>Modular AI-driven design</li>
-  </ul>
-  <div class="splinks">
-    <div class="splabel">Live Interfaces</div>
-    <a href="https://aurelia-v6.vercel.app/" target="_blank" rel="noopener noreferrer" class="splink">Aurelia V6 <span>&rarr;</span></a>
-    <a href="https://khazna-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" class="splink">Khazna Sigma <span>&rarr;</span></a>
-    <a href="https://commerce-main-cyan.vercel.app/" target="_blank" rel="noopener noreferrer" class="splink">Commerce Main Cyan <span>&rarr;</span></a>
-    <a href="https://gitcoin-co-30.vercel.app/apps" target="_blank" rel="noopener noreferrer" class="splink">Gitcoin Apps <span>&rarr;</span></a>
+<section id="hero">
+  <canvas id="node-canvas"></canvas>
+  <div id="identity">
+    <h1>Fouad Al-Hadi<em>Mahmoud Sendi</em></h1>
+    <div><span id="tw"></span><span id="cur"></span></div>
+    <div class="hstat">
+      <div class="badge"><span class="bdot green"></span>Identity Status: VERIFIED</div>
+      <div class="badge"><span class="bdot blue"></span>Repository State: LIVE</div>
+      <div class="badge"><span class="bdot green"></span>Live Deployments: 4 ACTIVE</div>
+      <div class="badge"><span class="bdot blue"></span>Execution Engine: STABLE</div>
+      <div class="badge"><span class="bdot green"></span>System Uptime: <span id="uptime">00h 00m 00s</span></div>
+    </div>
   </div>
-</div>
-<div class="sysp rv" style="transition-delay:.13s">
-  <div class="spbadge">MOD-02</div>
-  <div class="sptitle"><span class="sdot"></span>Identity Layer</div>
-  <p class="spsub">Public-facing identity and ecosystem presence.</p>
-  <p style="font-size:.72rem;color:var(--fd);flex:1;line-height:1.7">Experimental ecosystem presence and identity anchoring across public technical platforms. Structured proof of engineering philosophy and execution capability.</p>
-  <div class="splinks" style="margin-top:1.5rem">
-    <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank" rel="noopener noreferrer" class="splink" style="margin-bottom:.4rem">GitHub Profile <span>&rarr;</span></a>
-    <a href="https://www.producthunt.com/@foued_sendi" target="_blank" rel="noopener noreferrer" class="spcta">Product Hunt <span>&rarr;</span></a>
+  <div id="npanel">
+    <div id="nptag">Node Active</div>
+    <div id="nptitle"></div>
+    <div id="npdesc"></div>
+    <button id="npclose">[ CLOSE ]</button>
   </div>
-</div>
-<div class="sysp rv" style="transition-delay:.2s">
-  <div class="spbadge">MOD-03</div>
-  <div class="sptitle"><span class="sdot"></span>Sovereign Layer<small style="font-size:.6rem;color:rgba(255,255,255,.38);font-weight:400;margin-left:.3rem">(Private)</small></div>
-  <p class="spsub">Local-first, offline execution environment.</p>
-  <ul class="splist" style="flex:1">
-    <li>Fully local execution model</li>
-    <li>Vault-based persistent storage</li>
-    <li>Deterministic state management</li>
-    <li>Structured decision tracking</li>
-    <li>Human-owned data architecture</li>
-    <li>Zero external dependency design</li>
-  </ul>
-  <div class="spclassified">[ SYSTEM CLASSIFIED // LOCAL ACCESS ONLY ]</div>
-</div>
+</section>
 
-</div> </div> </main> <footer> <div class="flinks"> <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank" rel="noopener noreferrer">GitHub</a> <a href="https://www.producthunt.com/@foued_sendi" target="_blank" rel="noopener noreferrer">Product Hunt</a> <a href="https://aurelia-v6.vercel.app/" target="_blank" rel="noopener noreferrer">Aurelia V6</a> </div> <p>SOVEREIGN EXECUTION LAYER &nbsp;//&nbsp; <span id="yr"></span> &nbsp;//&nbsp; FOUAD AL-HADI MAHMOUD SENDI</p> </footer> <script> (function(){ 'use strict'; /* CLOCK */ function tick(){ var n=new Date(),pad=function(x){return String(x).padStart(2,'0')}; document.getElementById('clock').textContent=pad(n.getHours())+':'+pad(n.getMinutes())+':'+pad(n.getSeconds())+' UTC'; } tick(); setInterval(tick,1000); document.getElementById('yr').textContent=new Date().getFullYear(); /* TYPEWRITER */ var full='Digital Systems Architect\u2002|\u2002Autonomous Systems Designer\u2002|\u2002Sovereign Software Operator'; var i=0,tw=document.getElementById('tw'); function type(){if(i<full.length){tw.textContent+=full[i++];setTimeout(type,42);}} setTimeout(type,800); /* SCROLL REVEAL */ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1}); document.querySelectorAll('.rv').forEach(function(el){io.observe(el);}); /* NODE GRAPH CANVAS */ var canvas=document.getElementById('node-canvas'); var ctx=canvas.getContext('2d'); var W,H; var nodes=[ {id:0,label:'OBSERVATION', desc:'Data intake, environment sensing and signal capture',a:0}, {id:1,label:'MEASUREMENT', desc:'Quantifying system state, delta calculation and tracking',a:(Math.PI*2)/5}, {id:2,label:'DECISION', desc:'Deterministic logic evaluation and branch selection',a:(Math.PI*4)/5}, {id:3,label:'ACTION', desc:'State mutation, execution and deployment trigger',a:(Math.PI*6)/5}, {id:4,label:'VERIFICATION',desc:'End-to-end tracing, auditing and result confirmation',a:(Math.PI*8)/5} ]; var parts=[]; for(var k=0;k<48;k++){ parts.push({ea:k%nodes.length,eb:(k+2)%nodes.length,t:Math.random(),spd:.003+Math.random()*.0045}); } var hov=null,mx=-999,my=-999,start=performance.now(); function resize(){ var hero=document.getElementById('hero'); W=canvas.width=hero.clientWidth; H=canvas.height=hero.clientHeight; } resize(); window.addEventListener('resize',resize); function NR(){return Math.min(W,H)*.043;} function getPos(t){ var cx=W/2,cy=H/2,r=Math.min(W,H)*.31; return nodes.map(function(n){return{ id:n.id,label:n.label,desc:n.desc, x:cx+Math.cos(n.a+t*.11)*r, y:cy+Math.sin(n.a+t*.11)*r*.5 };}); } canvas.addEventListener('mousemove',function(e){ var r=canvas.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top; }); canvas.addEventListener('mouseleave',function(){mx=-999;my=-999;}); var npanel=document.getElementById('npanel'); var nptitle=document.getElementById('nptitle'); var npdesc=document.getElementById('npdesc'); document.getElementById('npclose').addEventListener('click',function(){npanel.classList.remove('on');}); canvas.addEventListener('click',function(e){ var r=canvas.getBoundingClientRect(); var ex=e.clientX-r.left,ey=e.clientY-r.top; var t=(performance.now()-start)/1000,pos=getPos(t),nr=NR(); for(var i=0;i<pos.length;i++){ var dx=ex-pos[i].x,dy=ey-pos[i].y; if(Math.sqrt(dx*dx+dy*dy)<nr+12){ nptitle.textContent=pos[i].label; npdesc.textContent=pos[i].desc; npanel.classList.add('on'); return; } } npanel.classList.remove('on'); }); function draw(){ var t=(performance.now()-start)/1000; var pos=getPos(t),nr=NR(); ctx.clearRect(0,0,W,H); var nh=null; for(var i=0;i<pos.length;i++){ var dx=mx-pos[i].x,dy=my-pos[i].y; if(Math.sqrt(dx*dx+dy*dy)<nr+14){nh=pos[i].id;break;} } if(hov!==nh){hov=nh;canvas.style.cursor=hov!==null?'pointer':'default';} /* edges */ for(var i=0;i<pos.length;i++){ for(var j=i+1;j<pos.length;j++){ var a=pos[i],b=pos[j],act=hov===a.id||hov===b.id; var g=ctx.createLinearGradient(a.x,a.y,b.x,b.y); g.addColorStop(0,'rgba(0,102,204,'+(act?.5:.14)+')'); g.addColorStop(.5,'rgba(68,170,255,'+(act?.3:.07)+')'); g.addColorStop(1,'rgba(0,102,204,'+(act?.5:.14)+')'); ctx.strokeStyle=g;ctx.lineWidth=act?1.5:.75; ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke(); } } /* particles */ for(var k=0;k<parts.length;k++){ var p=parts[k];p.t+=p.spd;if(p.t>1)p.t=0; var a=pos[p.ea],b=pos[p.eb]; var px=a.x+(b.x-a.x)*p.t,py=a.y+(b.y-a.y)*p.t; var g=ctx.createRadialGradient(px,py,0,px,py,5); g.addColorStop(0,'rgba(68,170,255,.88)');g.addColorStop(1,'rgba(68,170,255,0)'); ctx.fillStyle=g;ctx.beginPath();ctx.arc(px,py,5,0,Math.PI*2);ctx.fill(); } /* nodes */ for(var i=0;i<pos.length;i++){ var p=pos[i],isH=hov===p.id; var pulse=Math.sin(t*2.5+p.id*1.25)*.09+1; var r=nr*(isH?1.22*pulse:pulse); var g1=ctx.createRadialGradient(p.x,p.y,r*.4,p.x,p.y,r*3.2); g1.addColorStop(0,'rgba(0,102,204,'+(isH?.5:.14)+')'); g1.addColorStop(1,'rgba(0,102,204,0)'); ctx.fillStyle=g1;ctx.beginPath();ctx.arc(p.x,p.y,r*3.2,0,Math.PI*2);ctx.fill(); var g2=ctx.createRadialGradient(p.x-r*.3,p.y-r*.3,r*.1,p.x,p.y,r); g2.addColorStop(0,isH?'#55bbff':'#1a70c8'); g2.addColorStop(.6,isH?'#0066cc':'#004499'); g2.addColorStop(1,isH?'#003388':'#001844'); ctx.fillStyle=g2;ctx.beginPath();ctx.arc(p.x,p.y,r,0,Math.PI*2);ctx.fill(); ctx.strokeStyle=isH?'rgba(85,187,255,.95)':'rgba(0,102,204,.65)'; ctx.lineWidth=isH?2:1;ctx.stroke(); ctx.fillStyle=isH?'#fff':'rgba(0,163,255,.82)'; ctx.font=Math.max(8,nr*.5)+'px \'Space Mono\',monospace'; ctx.textAlign='center';ctx.textBaseline='middle'; var ly=p.y>H/2?p.y+r+18:p.y-r-14; ctx.fillText(p.label,p.x,ly); } /* center */ ctx.fillStyle='rgba(0,102,204,.25)'; ctx.font='bold '+Math.min(W,H)*.019+'px \'Space Mono\',monospace'; ctx.textAlign='center';ctx.textBaseline='middle'; ctx.fillText('EXECUTION FLOW',W/2,H/2); requestAnimationFrame(draw); } requestAnimationFrame(draw); })(); </script> </body> </html>
+<main>
+  <div class="sec">
+    <div class="sec-hd rv"><h2 class="sec-title">Proof Signals</h2></div>
+    <div class="proof-grid">
+      <div class="proof-card rv"><div class="pc-icon">⬡</div><div class="pc-title">Repository Proof</div><div class="pc-text">Public GitHub architecture. CI/CD pipelines active. Commit history verifiable.</div></div>
+      <div class="proof-card rv"><div class="pc-icon">◈</div><div class="pc-title">Engine Proof</div><div class="pc-text">Deterministic execution model. Traceable state management. No black-box systems.</div></div>
+      <div class="proof-card rv"><div class="pc-icon">▣</div><div class="pc-title">Deployment Proof</div><div class="pc-text">4 live Vercel systems. Production-grade infrastructure. Zero-downtime architecture.</div></div>
+      <div class="proof-card rv"><div class="pc-icon">◎</div><div class="pc-title">Stack Proof</div><div class="pc-text">Modern TypeScript + React 19 + Vite 7. Edge-optimized runtime. Full observability.</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-hd rv"><h2 class="sec-title">Repository Verification</h2></div>
+    <div class="repo rv">
+      <div class="repo-h">
+        <div class="repo-name">aurelia-digital-pro/foued-sendi</div>
+        <div style="font-size:.65rem;color:#22c55e">● PUBLIC</div>
+      </div>
+      <div>
+        <span class="repo-tag">NODE.JS</span>
+        <span class="repo-tag">TYPESCRIPT</span>
+        <span class="repo-tag">REACT 19</span>
+        <span class="repo-tag">VITE 7</span>
+        <span class="repo-tag">THREE.JS</span>
+        <span class="repo-tag">GSAP</span>
+        <span class="repo-tag">TAILWIND</span>
+      </div>
+      <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank" class="repo-btn">View Repository →</a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-hd rv"><h2 class="sec-title">Live Deployments</h2></div>
+    <table class="dep-table rv">
+      <thead><tr><th>System</th><th>URL</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Aurelia V6</td><td><a href="https://aurelia-v6.vercel.app/" target="_blank">aurelia-v6.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
+        <tr><td>Khazna Sigma</td><td><a href="https://khazna-sigma.vercel.app/" target="_blank">khazna-sigma.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
+        <tr><td>Commerce Main</td><td><a href="https://commerce-main-cyan.vercel.app/" target="_blank">commerce-main-cyan.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
+        <tr><td>Gitcoin Apps</td><td><a href="https://gitcoin-co-30.vercel.app/apps" target="_blank">gitcoin-co-30.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="sec-hd rv"><h2 class="sec-title">Execution Model</h2></div>
+    <div class="model-grid rv">
+      <div class="mstage"><div class="msnum">01</div><div class="msname">Origin</div></div>
+      <div class="mstage"><div class="msnum">02</div><div class="msname">Observe</div></div>
+      <div class="mstage"><div class="msnum">03</div><div class="msname">Decide</div></div>
+      <div class="mstage"><div class="msnum">04</div><div class="msname">Act</div></div>
+      <div class="mstage"><div class="msnum">05</div><div class="msname">Verify</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-hd rv"><h2 class="sec-title">Build & Runtime Stack</h2></div>
+    <table class="stack-table rv">
+      <tr><td>Runtime</td><td>Node 24.x LTS</td></tr>
+      <tr><td>Framework</td><td>React 19.x</td></tr>
+      <tr><td>Build Tool</td><td>Vite 7.x</td></tr>
+      <tr><td>Language</td><td>TypeScript 5.x</td></tr>
+      <tr><td>Animation</td><td>GSAP 3.x + Three.js</td></tr>
+      <tr><td>Styling</td><td>Tailwind CSS 4.x</td></tr>
+      <tr><td>Deploy</td><td>Vercel Edge Network</td></tr>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <div class="flinks">
+    <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank">GitHub</a>
+    <a href="https://www.producthunt.com/@foued_sendi" target="_blank">Product Hunt</a>
+    <a href="https://aurelia-v6.vercel.app/" target="_blank">Aurelia V6</a>
+    <a href="https://khazna-sigma.vercel.app/" target="_blank">Khazna Sigma</a>
+  </div>
+  <p>SOVEREIGN EXECUTION LAYER // <span id="yr"></span> // FOUAD AL-HADI MAHMOUD SENDI</p>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  const startTime = Date.now();
+  
+  function tick(){
+    const n=new Date(),pad=x=>String(x).padStart(2,'0');
+    document.getElementById('clock').textContent=pad(n.getUTCHours())+':'+pad(n.getUTCMinutes())+':'+pad(n.getUTCSeconds())+' UTC';
+    
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    const h = Math.floor(elapsed / 3600);
+    const m = Math.floor((elapsed % 3600) / 60);
+    const s = elapsed % 60;
+    document.getElementById('uptime').textContent = `${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+  }
+  tick(); setInterval(tick,1000);
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  
+  const full='Digital Systems Architect | Autonomous Systems Designer | Sovereign Software Operator';
+  let i=0,tw=document.getElementById('tw');
+  function type(){if(i<full.length){tw.textContent+=full[i++];setTimeout(type,42);}}
+  setTimeout(type,800);
+  
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  
+  const canvas=document.getElementById('node-canvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,nodes=[],mx=-999,my=-999,hov=null;
+  const npanel=document.getElementById('npanel');
+  const nptitle=document.getElementById('nptitle');
+  const npdesc=document.getElementById('npdesc');
+  document.getElementById('npclose').addEventListener('click',()=>npanel.classList.remove('on'));
+  
+  const nodeData=[
+    {label:'OBSERVATION',desc:'Data intake, environment sensing and signal capture'},
+    {label:'MEASUREMENT',desc:'Quantifying system state, delta calculation and tracking'},
+    {label:'DECISION',desc:'Deterministic logic evaluation and branch selection'},
+    {label:'ACTION',desc:'State mutation, execution and deployment trigger'},
+    {label:'VERIFICATION',desc:'End-to-end tracing, auditing and result confirmation'}
+  ];
+  
+  function resize(){
+    W=canvas.width=window.innerWidth;
+    H=canvas.height=window.innerHeight;
+    nodes=[];
+    for(let i=0;i<30;i++){
+      const a=(Math.PI*2/5)*Math.floor(Math.random()*5);
+      const r=Math.min(W,H)*.31*(.7+Math.random()*.3);
+      nodes.push({
+        id:i,x:W/2+Math.cos(a)*r,y:H/2+Math.sin(a)*r*.5,
+        vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5,
+        data:nodeData[i%5]
+      });
+    }
+  }
+  resize(); window.addEventListener('resize',resize);
+  
+  canvas.addEventListener('mousemove',e=>{const r=canvas.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;});
+  canvas.addEventListener('mouseleave',()=>{mx=-999;my=-999;});
+  canvas.addEventListener('click',e=>{
+    const r=canvas.getBoundingClientRect(),ex=e.clientX-r.left,ey=e.clientY-r.top;
+    for(let i=0;i<nodes.length;i++){
+      const dx=ex-nodes[i].x,dy=ey-nodes[i].y;
+      if(Math.sqrt(dx*dx+dy*dy)<20){
+        nptitle.textContent=nodes[i].data.label;
+        npdesc.textContent=nodes[i].data.desc;
+        npanel.classList.add('on'); return;
+      }
+    }
+    npanel.classList.remove('on');
+  });
+  
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    let nh=null;
+    
+    nodes.forEach((n,i)=>{
+      n.x+=n.vx; n.y+=n.vy;
+      if(n.x<0||n.x>W)n.vx*=-1;
+      if(n.y<0||n.y>H)n.vy*=-1;
+      const dx=mx-n.x,dy=my-n.y;
+      if(Math.sqrt(dx*dx+dy*dy)<25)nh=i;
+    });
+    
+    if(hov!==nh){hov=nh;canvas.style.cursor=hov!==null?'pointer':'default';}
+    
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const a=nodes[i],b=nodes[j],act=hov===i||hov===j;
+        const dist=Math.sqrt((a.x-b.x)**2+(a.y-b.y)**2);
+        if(dist<200){
+          ctx.strokeStyle=`rgba(0,102,204,${act?.5:.1})`;
+          ctx.lineWidth=act?1.5:.5;
+          ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+        }
+      }
+    }
+    
+    nodes.forEach((n,i)=>{
+      const isH=hov===i,r=isH?8:4;
+      const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,r*3);
+      g.addColorStop(0,isH?'rgba(85,187,255,.8)':'rgba(0,102,204,.4)');
+      g.addColorStop(1,'rgba(0,102,204,0)');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(n.x,n.y,r*3,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle=isH?'#55bbff':'#0066cc';
+      ctx.beginPath();ctx.arc(n.x,n.y,r,0,Math.PI*2);ctx.fill();
+    });
+    
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+</script>
+</body>
+</html>
