@@ -1,244 +1,203 @@
-<!DOCTYPE html> <html lang="en" itemscope itemtype="https://schema.org/Person"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect | Proof of Execution</title> <meta name="description" content="Fouad Al-Hadi Mahmoud Sendi is a Digital Systems Architect, Autonomous Systems Designer, and Sovereign Software Operator. Creator of Aegion OS, SAAD, and the Aurelia system ecosystem. Real systems. Real deployments. Real execution."> <meta name="keywords" content="Fouad Al-Hadi Mahmoud Sendi, Fouad Sendi, Digital Systems Architect, Autonomous Systems Designer, Aegion OS, SAAD, Aurelia, Sovereign Software, Systems Architecture"> <meta name="author" content="Fouad Al-Hadi Mahmoud Sendi"> <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"> <link rel="canonical" href="https://aurelia-digital-pro.github.io/foued-sendi/"> <meta property="og:type" content="profile"> <meta property="og:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect"> <meta property="og:description" content="Creator of Aegion OS, SAAD and the Aurelia ecosystem. Digital Systems Architect, Autonomous Systems Designer, and Sovereign Software Operator. Proof of execution layer."> <meta property="og:url" content="https://aurelia-digital-pro.github.io/foued-sendi/"> <meta property="og:site_name" content="Fouad Al-Hadi Mahmoud Sendi"> <meta property="profile:first_name" content="Fouad"> <meta property="profile:last_name" content="Sendi"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect"> <meta name="twitter:description" content="Creator of Aegion OS, SAAD and Aurelia. Proof of execution layer. Real systems. Real deployments."> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Person", "name": "Fouad Al-Hadi Mahmoud Sendi", "alternateName": ["Fouad Sendi", "F.A.M. Sendi"], "jobTitle": ["Digital Systems Architect", "Autonomous Systems Designer", "Sovereign Software Operator"], "description": "Fouad Al-Hadi Mahmoud Sendi designs and operates structured digital systems that transform complex operational requirements into deterministic, traceable execution models. Creator of Aegion OS, SAAD, and the Aurelia ecosystem.", "url": "https://aurelia-digital-pro.github.io/foued-sendi/", "sameAs": [ "https://github.com/aurelia-digital-pro/foued-sendi", "https://www.producthunt.com/@foued_sendi" ], "knowsAbout": [ "Systems Architecture","Autonomous AI Systems","Offline-first Software", "Sovereign Data Infrastructure","Multi-agent Systems","Deterministic Execution Models", "Node.js","React","TypeScript" ], "owns": [ { "@type": "SoftwareApplication", "name": "Aegion OS", "description": "Autonomous AI Operating System with multi-agent architecture, persistent memory layer, and evolution-based improvement cycles.", "applicationCategory": "AI System" }, { "@type": "SoftwareApplication", "name": "SAAD", "description": "Sovereign Autonomous Architecture Design — a local-first, offline execution environment with vault-based persistent storage and deterministic state management.", "applicationCategory": "Execution Engine" }, { "@type": "SoftwareApplication", "name": "Aurelia", "description": "Public-facing interface layer of the Aegion ecosystem. Live production system deployed on Vercel.", "url": "https://aurelia-v6.vercel.app/", "applicationCategory": "Web Application" } ] } </script> <style> *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} :root{ --p:#0ea5e9;--pg:rgba(14,165,233,0.12);--pb:rgba(14,165,233,0.07);--pgl:rgba(14,165,233,0.25); --g:#10b981;--gd:rgba(16,185,129,0.18); --bg:#030712;--s1:#060f1e;--s2:#080e1a;--s3:#0b1220; --fg:#f0f6ff;--fd:rgba(240,246,255,0.62);--fm:rgba(240,246,255,0.32);--fx:rgba(240,246,255,0.16); --mono:'Space Mono',monospace;--sans:'Inter',system-ui,sans-serif;--disp:'Syncopate',sans-serif; } html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility} body{font-family:var(--sans);background:var(--bg);color:var(--fg);min-height:100vh;overflow-x:hidden;line-height:1.6}
-/* FIXED LAYERS */
-#bg-canvas{position:fixed;inset:0;z-index:0}
-#hero-canvas{position:absolute;inset:0;z-index:1;pointer-events:none}
-.grid-layer{position:fixed;inset:0;z-index:2;
-background-image:linear-gradient(rgba(14,165,233,0.035) 1px,transparent 1px),
-linear-gradient(90deg,rgba(14,165,233,0.035) 1px,transparent 1px);
-background-size:56px 56px;pointer-events:none}
-.vignette{position:fixed;inset:0;z-index:3;
-background:radial-gradient(ellipse at 50% 0%,transparent 30%,rgba(3,7,18,0.55) 100%);
+<!DOCTYPE html> <html lang="en" itemscope itemtype="https://schema.org/Person"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect | Proof of Execution</title> <meta name="description" content="Fouad Al-Hadi Mahmoud Sendi is a Digital Systems Architect, Autonomous Systems Designer, and Sovereign Software Operator. Creator of Aegion OS, SAAD, and the Aurelia system ecosystem. Real systems. Real deployments. Real execution."> <meta name="keywords" content="Fouad Al-Hadi Mahmoud Sendi, Fouad Sendi, Digital Systems Architect, Autonomous Systems Designer, Aegion OS, SAAD, Aurelia, Sovereign Software, Systems Architecture"> <meta name="author" content="Fouad Al-Hadi Mahmoud Sendi"> <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"> <link rel="canonical" href="https://aurelia-digital-pro.github.io/foued-sendi/"> <meta property="og:type" content="profile"> <meta property="og:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect"> <meta property="og:description" content="Creator of Aegion OS, SAAD and the Aurelia ecosystem. Digital Systems Architect, Autonomous Systems Designer, and Sovereign Software Operator. Proof of execution layer."> <meta property="og:url" content="https://aurelia-digital-pro.github.io/foued-sendi/"> <meta property="og:site_name" content="Fouad Al-Hadi Mahmoud Sendi"> <meta property="profile:first_name" content="Fouad"> <meta property="profile:last_name" content="Sendi"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect"> <meta name="twitter:description" content="Creator of Aegion OS, SAAD and Aurelia. Proof of execution layer. Real systems. Real deployments."> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Person", "name": "Fouad Al-Hadi Mahmoud Sendi", "alternateName": ["Fouad Sendi", "F.A.M. Sendi"], "jobTitle": ["Digital Systems Architect", "Autonomous Systems Designer", "Sovereign Software Operator"], "description": "Fouad Al-Hadi Mahmoud Sendi designs and operates structured digital systems that transform complex operational requirements into deterministic, traceable execution models. Creator of Aegion OS, SAAD, and the Aurelia ecosystem.", "url": "https://aurelia-digital-pro.github.io/foued-sendi/", "sameAs": [ "https://github.com/aurelia-digital-pro/foued-sendi", "https://www.producthunt.com/@foued_sendi" ], "knowsAbout": [ "Systems Architecture", "Autonomous AI Systems", "Offline-first Software", "Sovereign Data Infrastructure", "Multi-agent Systems", "Deterministic Execution Models", "Node.js", "React", "TypeScript" ], "owns": [ { "@type": "SoftwareApplication", "name": "Aegion OS", "description": "Autonomous AI Operating System with multi-agent architecture, persistent memory layer, and evolution-based improvement cycles.", "applicationCategory": "AI System" }, { "@type": "SoftwareApplication", "name": "SAAD", "description": "Sovereign Autonomous Architecture Design — a local-first, offline execution environment with vault-based persistent storage and deterministic state management.", "applicationCategory": "Execution Engine" }, { "@type": "SoftwareApplication", "name": "Aurelia", "description": "Public-facing interface layer of the Aegion ecosystem. Live production system deployed on Vercel.", "url": "https://aurelia-v6.vercel.app/", "applicationCategory": "Web Application" } ] } </script> <style> *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} :root{ --blue:#0ea5e9;--blue-dim:rgba(14,165,233,0.12);--blue-glow:rgba(14,165,233,0.25); --green:#10b981;--green-dim:rgba(16,185,129,0.15); --amber:#f59e0b; --bg:#030712;--s1:#060f1e;--s2:#080e1a;--s3:#0a1120; --fg:#f0f6ff;--fd:rgba(240,246,255,0.62);--fm:rgba(240,246,255,0.32);--fxs:rgba(240,246,255,0.18); --mono:'Space Mono',monospace;--sans:'Inter',system-ui,sans-serif;--disp:'Syncopate',sans-serif; --r:0px; } html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased} body{font-family:var(--sans);background:var(--bg);color:var(--fg);min-height:100vh;overflow-x:hidden;line-height:1.6}
+/* AMBIENT BACKGROUND */
+#bg-canvas{position:fixed;inset:0;z-index:0;opacity:.55}
+.grid-overlay{position:fixed;inset:0;z-index:1;
+background-image:linear-gradient(rgba(14,165,233,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(14,165,233,0.04) 1px,transparent 1px);
+background-size:60px 60px;pointer-events:none}
+.vignette{position:fixed;inset:0;z-index:2;
+background:radial-gradient(ellipse at center,transparent 40%,rgba(3,7,18,0.7) 100%);
 pointer-events:none}
-.scanlines{position:fixed;inset:0;z-index:4;
-background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.018) 3px,rgba(0,0,0,0.018) 4px);
-pointer-events:none;animation:scan 18s linear infinite}
-@keyframes scan{0%{background-position:0 0}100%{background-position:0 240px}}
+.scan{position:fixed;inset:0;z-index:3;
+background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.022) 3px,rgba(0,0,0,0.022) 4px);
+pointer-events:none;animation:scanmv 15s linear infinite}
+@keyframes scanmv{0%{background-position:0 0}100%{background-position:0 200px}}
 
 /* NAV */
-nav{position:sticky;top:0;z-index:500;
+nav{position:sticky;top:0;z-index:200;
 display:flex;align-items:center;justify-content:space-between;
 padding:.8rem 2.5rem;
-background:rgba(3,7,18,0.9);backdrop-filter:blur(24px) saturate(160%);
-border-bottom:1px solid rgba(14,165,233,0.11);
-transition:background .3s}
+background:rgba(3,7,18,0.88);backdrop-filter:blur(20px) saturate(150%);
+border-bottom:1px solid rgba(14,165,233,0.12)}
 @media(max-width:640px){nav{padding:.7rem 1.2rem}}
-.nav-brand{display:flex;flex-direction:column;gap:.06rem}
-.nav-name{font-family:var(--disp);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--fg);opacity:.82}
-.nav-role{font-family:var(--mono);font-size:.5rem;letter-spacing:.16em;text-transform:uppercase;color:var(--p);opacity:.65}
+.nav-id{display:flex;flex-direction:column;gap:.08rem}
+.nav-name{font-family:var(--disp);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--fg);opacity:.8;line-height:1.3}
+.nav-role{font-family:var(--mono);font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);opacity:.65}
 .nav-right{display:flex;align-items:center;gap:1.6rem}
-.nav-pill{display:flex;align-items:center;gap:.4rem;
-padding:.3rem .75rem;border:1px solid rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);
-font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--g)}
-.pill-dot{width:6px;height:6px;border-radius:50%;background:var(--g);
-box-shadow:0 0 5px var(--g),0 0 10px rgba(16,185,129,0.4);
-animation:pulse 2.6s ease infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 5px var(--g)}
-50%{opacity:.5;transform:scale(.7);box-shadow:0 0 2px var(--g)}}
-.nav-clock{font-family:var(--mono);font-size:.58rem;color:var(--p);opacity:.75;font-variant-numeric:tabular-nums;letter-spacing:.06em}
+.nav-signal{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.sig-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:sigpulse 2.5s ease infinite}
+@keyframes sigpulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 5px var(--green)}50%{opacity:.55;transform:scale(.75);box-shadow:0 0 2px var(--green)}}
+.nav-clock{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;color:var(--blue);opacity:.8;font-variant-numeric:tabular-nums}
 
-/* PAGE */
+/* LAYOUT */
 .page{position:relative;z-index:10}
 .wrap{max-width:1120px;margin:0 auto;padding:0 2.5rem}
 @media(max-width:640px){.wrap{padding:0 1.2rem}}
-.sdiv{height:1px;background:linear-gradient(to right,transparent,rgba(14,165,233,0.18),transparent)}
+
+/* DIVIDER */
+.sdiv{height:1px;background:linear-gradient(to right,transparent,rgba(14,165,233,0.2),transparent);margin:0}
 
 /* HERO */
-.hero{padding:6rem 0 5.5rem;position:relative;overflow:hidden;min-height:480px}
-.hero-canvas-wrap{position:absolute;inset:0;z-index:1;pointer-events:none}
-.hero-inner{position:relative;z-index:2}
-.hero-eyebrow{display:flex;align-items:center;gap:.75rem;margin-bottom:1.6rem;
-opacity:0;animation:riseup .9s cubic-bezier(.22,.68,0,1.1) forwards .1s}
-.eyebrow-line{width:28px;height:1px;background:linear-gradient(to right,var(--p),transparent);opacity:.7}
-.eyebrow-txt{font-family:var(--mono);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--p);opacity:.75}
-.hero-name{font-family:var(--disp);font-size:clamp(2rem,5.5vw,4.6rem);font-weight:700;
-line-height:1.04;letter-spacing:-.02em;text-transform:uppercase;
-opacity:0;animation:riseup .9s cubic-bezier(.22,.68,0,1.1) forwards .22s}
-.hero-name-accent{display:block;color:var(--p)}
-.hero-desc{font-size:clamp(.8rem,1.5vw,.95rem);color:var(--fd);max-width:560px;
-line-height:1.78;margin-top:1.3rem;
-opacity:0;animation:riseup .9s cubic-bezier(.22,.68,0,1.1) forwards .38s}
+.hero{padding:6rem 0 5rem;position:relative}
+.hero-eyebrow{display:flex;align-items:center;gap:.75rem;margin-bottom:1.8rem;opacity:0;animation:risef .8s ease forwards .1s}
+.eyebrow-line{width:32px;height:1px;background:var(--blue);opacity:.6}
+.eyebrow-text{font-family:var(--mono);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);opacity:.75}
+.hero-name{font-family:var(--disp);font-size:clamp(2.2rem,5.5vw,4.8rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;opacity:0;animation:risef .9s ease forwards .2s}
+.hero-name-sub{color:var(--blue);display:block;font-size:.8em}
+.hero-desc{font-size:clamp(.8rem,1.6vw,1rem);color:var(--fd);max-width:580px;line-height:1.75;margin-top:1.4rem;opacity:0;animation:risef .9s ease forwards .4s}
 .hero-desc strong{color:var(--fg);font-weight:600}
-.hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.75rem;
-margin-top:2.8rem;
-opacity:0;animation:riseup .9s cubic-bezier(.22,.68,0,1.1) forwards .55s}
-.hstat{border:1px solid rgba(14,165,233,0.17);background:rgba(6,15,30,0.65);
-backdrop-filter:blur(8px);padding:1rem 1.1rem;position:relative;overflow:hidden;
-transition:border-color .3s,background .3s,transform .3s,box-shadow .3s}
-.hstat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
-background:linear-gradient(to right,transparent,var(--p),transparent);opacity:0;transition:opacity .3s}
-.hstat:hover{border-color:rgba(14,165,233,.4);background:rgba(14,165,233,.07);
-transform:translateY(-2px);box-shadow:0 8px 24px rgba(14,165,233,0.1)}
-.hstat:hover::after{opacity:.6}
-.hstat-lbl{font-family:var(--mono);font-size:.54rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fm);margin-bottom:.4rem}
-.hstat-val{font-family:var(--mono);font-size:.8rem;font-weight:700;color:var(--p);display:flex;align-items:center;gap:.4rem}
-.hval-dot{width:5px;height:5px;border-radius:50%;background:var(--g);
-box-shadow:0 0 5px var(--g);animation:pulse 2.6s ease infinite;flex-shrink:0}
-@keyframes riseup{to{opacity:1;transform:translateY(0)}}
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin-top:2.8rem;opacity:0;animation:risef .9s ease forwards .6s}
+.hstat{border:1px solid rgba(14,165,233,0.18);background:rgba(6,15,30,0.6);padding:1rem 1.1rem;position:relative;overflow:hidden;transition:border-color .3s,background .3s}
+.hstat:hover{border-color:rgba(14,165,233,0.4);background:rgba(14,165,233,0.06)}
+.hstat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--blue),transparent);opacity:0;transition:opacity .3s}
+.hstat:hover::after{opacity:.5}
+.hstat-lbl{font-family:var(--mono);font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fm);margin-bottom:.4rem}
+.hstat-val{font-family:var(--mono);font-size:.82rem;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:.4rem}
+.hval-dot{width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:sigpulse 2.5s ease infinite;flex-shrink:0}
 
-/* SECTION */
+/* SECTION HEADER */
 .sec{padding:4.5rem 0}
-.sec-head{display:flex;align-items:center;gap:1rem;margin-bottom:2.8rem}
-.sec-num{font-family:var(--mono);font-size:.56rem;color:var(--fm);letter-spacing:.12em;flex-shrink:0}
-.sec-title{font-family:var(--disp);font-size:clamp(.85rem,1.8vw,1.15rem);text-transform:uppercase;letter-spacing:.2em;color:var(--fg);white-space:nowrap}
-.sec-line{flex:1;height:1px;background:linear-gradient(to right,rgba(14,165,233,0.22),transparent)}
+.sec-head{display:flex;align-items:center;gap:1rem;margin-bottom:3rem}
+.sec-num{font-family:var(--mono);font-size:.58rem;color:var(--fm);letter-spacing:.12em;flex-shrink:0}
+.sec-title{font-family:var(--disp);font-size:clamp(.9rem,2vw,1.25rem);text-transform:uppercase;letter-spacing:.2em;color:var(--fg)}
+.sec-line{flex:1;height:1px;background:linear-gradient(to right,rgba(14,165,233,0.25),transparent)}
+.sec-sub{font-size:.72rem;font-family:var(--mono);color:var(--fm);text-transform:uppercase;letter-spacing:.14em;margin-top:.3rem}
 
 /* PROOF CARDS */
-.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:1rem}
-.pcard{border:1px solid rgba(14,165,233,0.15);
-background:linear-gradient(135deg,rgba(6,15,30,0.85),rgba(8,14,26,0.9));
-padding:1.5rem;position:relative;overflow:hidden;
-transition:border-color .3s,transform .3s,box-shadow .3s}
-.pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
-background:linear-gradient(to right,transparent,rgba(14,165,233,0.6),transparent);
-opacity:0;transition:opacity .3s}
-.pcard:hover{border-color:rgba(14,165,233,0.45);transform:translateY(-3px);
-box-shadow:0 16px 48px rgba(14,165,233,0.13)}
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.pcard{border:1px solid rgba(14,165,233,0.15);background:linear-gradient(135deg,rgba(6,15,30,0.8),rgba(8,14,26,0.9));padding:1.5rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s;cursor:default}
+.pcard:hover{border-color:rgba(14,165,233,0.45);transform:translateY(-2px);box-shadow:0 12px 40px rgba(14,165,233,0.12)}
+.pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,rgba(14,165,233,0.5),transparent);opacity:0;transition:opacity .3s}
 .pcard:hover::before{opacity:1}
-.pcard-corner{position:absolute;top:.7rem;right:.8rem;font-family:var(--mono);font-size:.5rem;color:var(--fx);letter-spacing:.1em}
-.pcard-type{font-family:var(--mono);font-size:.53rem;letter-spacing:.18em;text-transform:uppercase;color:var(--p);opacity:.7;margin-bottom:.55rem}
-.pcard-title{font-size:.9rem;font-weight:600;color:var(--fg);margin-bottom:.45rem;letter-spacing:-.01em}
-.pcard-body{font-size:.76rem;color:var(--fd);line-height:1.75}
-.pcard-signal{display:flex;align-items:center;gap:.4rem;margin-top:.9rem;
-font-family:var(--mono);font-size:.58rem;color:var(--g);text-transform:uppercase;letter-spacing:.1em}
-.psig-dot{width:5px;height:5px;border-radius:50%;background:var(--g);
-box-shadow:0 0 5px var(--g);animation:pulse 2.6s ease infinite;flex-shrink:0}
-.pcard-link{display:inline-flex;align-items:center;gap:.35rem;margin-top:.75rem;
-font-family:var(--mono);font-size:.6rem;color:var(--p);text-decoration:none;
-letter-spacing:.06em;border-bottom:1px solid transparent;transition:border-color .2s,opacity .2s;opacity:.8}
-.pcard-link:hover{border-color:var(--p);opacity:1}
+.pcard-corner{position:absolute;top:.6rem;right:.7rem;font-family:var(--mono);font-size:.52rem;color:var(--fxs);letter-spacing:.1em}
+.pcard-type{font-family:var(--mono);font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);opacity:.7;margin-bottom:.6rem}
+.pcard-title{font-size:.95rem;font-weight:600;color:var(--fg);margin-bottom:.5rem;letter-spacing:-.01em}
+.pcard-body{font-size:.78rem;color:var(--fd);line-height:1.75}
+.pcard-signal{display:flex;align-items:center;gap:.4rem;margin-top:1rem;font-family:var(--mono);font-size:.6rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
+.psig-dot{width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 5px var(--green);animation:sigpulse 2.5s ease infinite;flex-shrink:0}
+.pcard-link{display:inline-flex;align-items:center;gap:.35rem;margin-top:.8rem;font-family:var(--mono);font-size:.62rem;color:var(--blue);text-decoration:none;letter-spacing:.06em;border-bottom:1px solid transparent;transition:border-color .2s,opacity .2s;opacity:.8}
+.pcard-link:hover{border-color:var(--blue);opacity:1}
 
 /* ECOSYSTEM */
-.eco-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1.2rem}
-.ecocard{border:1px solid rgba(14,165,233,0.2);
-background:linear-gradient(155deg,rgba(8,14,26,0.92),rgba(6,15,30,0.88));
-padding:1.8rem;position:relative;overflow:hidden;
-transition:border-color .3s,box-shadow .3s,transform .3s}
-.ecocard:hover{border-color:rgba(14,165,233,0.5);box-shadow:0 0 50px rgba(14,165,233,0.1);transform:translateY(-2px)}
-.eco-bar{position:absolute;top:0;left:0;width:2px;height:100%;
-background:linear-gradient(to bottom,var(--p),transparent);opacity:.4;transition:opacity .3s}
-.ecocard:hover .eco-bar{opacity:1}
-.eco-num{font-family:var(--mono);font-size:.53rem;color:var(--fm);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.5rem}
-.eco-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.65rem;flex-wrap:wrap;gap:.5rem}
-.eco-name{font-family:var(--disp);font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fg)}
-.eco-badge{font-family:var(--mono);font-size:.5rem;padding:.22rem .55rem;
-border:1px solid rgba(14,165,233,0.3);color:rgba(14,165,233,.65);
-text-transform:uppercase;letter-spacing:.1em}
-.eco-badge.prv{border-color:rgba(240,246,255,0.15);color:var(--fm)}
-.eco-badge.live{border-color:rgba(16,185,129,0.35);color:var(--g)}
-.eco-desc{font-size:.77rem;color:var(--fd);line-height:1.75;margin-bottom:.9rem}
-.eco-list{list-style:none;font-size:.7rem;color:rgba(240,246,255,.58);margin-bottom:1.1rem}
-.eco-list li{display:flex;align-items:flex-start;gap:.45rem;padding:.18rem 0;line-height:1.5}
+.ecosystem{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
+.ecocard{border:1px solid rgba(14,165,233,0.2);background:linear-gradient(160deg,rgba(8,14,26,0.9),rgba(6,15,30,0.85));padding:1.8rem;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.ecocard:hover{border-color:rgba(14,165,233,0.5);box-shadow:0 0 40px rgba(14,165,233,0.1)}
+.eco-accent{position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,var(--blue),transparent);opacity:.5;transition:opacity .3s}
+.ecocard:hover .eco-accent{opacity:1}
+.eco-num{font-family:var(--mono);font-size:.55rem;color:var(--fm);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.5rem}
+.eco-name{font-family:var(--disp);font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fg);margin-bottom:.25rem;display:flex;align-items:center;gap:.6rem}
+.eco-badge{font-size:.52rem;font-family:var(--mono);padding:.2rem .5rem;border:1px solid rgba(14,165,233,0.3);color:rgba(14,165,233,.6);text-transform:uppercase;letter-spacing:.1em;font-weight:400}
+.eco-badge.private{border-color:rgba(240,246,255,0.15);color:var(--fm)}
+.eco-desc{font-size:.78rem;color:var(--fd);line-height:1.75;margin:.65rem 0 1rem}
+.eco-list{list-style:none;font-size:.72rem;color:rgba(240,246,255,.58);margin-bottom:1.2rem}
+.eco-list li{display:flex;align-items:flex-start;gap:.5rem;padding:.18rem 0}
 .eco-list li::before{content:'›';color:rgba(14,165,233,.5);flex-shrink:0;margin-top:.05rem}
-.eco-status{display:flex;align-items:center;gap:.4rem;
-font-family:var(--mono);font-size:.58rem;color:var(--g);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem}
-.eco-links-block{border-top:1px solid rgba(255,255,255,.05);padding-top:.9rem;display:flex;flex-direction:column;gap:.3rem}
-.eco-link{display:flex;align-items:center;justify-content:space-between;
-padding:.5rem .7rem;font-family:var(--mono);font-size:.63rem;color:var(--p);
-text-decoration:none;border:1px solid transparent;letter-spacing:.04em;
-transition:background .2s,border-color .2s}
+.eco-links{display:flex;flex-direction:column;gap:.3rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.05)}
+.eco-link{display:flex;align-items:center;justify-content:space-between;padding:.4rem .55rem;font-family:var(--mono);font-size:.65rem;color:var(--blue);text-decoration:none;border:1px solid transparent;letter-spacing:.04em;transition:background .2s,border-color .2s}
 .eco-link:hover{background:rgba(14,165,233,.08);border-color:rgba(14,165,233,.25)}
-.eco-link-arr{opacity:.45;transition:opacity .2s,transform .2s}
-.eco-link:hover .eco-link-arr{opacity:.9;transform:translateX(3px)}
+.eco-link-arr{opacity:.5;font-size:.8rem}
+.eco-status{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.6rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-top:1rem}
 
 /* EXECUTION MODEL */
-.xmodel{display:grid;grid-template-columns:repeat(5,1fr);position:relative;overflow:hidden}
-@media(max-width:720px){.xmodel{grid-template-columns:1fr}}
-.xstage{border:1px solid rgba(14,165,233,0.18);background:var(--s1);
-padding:1.4rem 1rem;text-align:center;position:relative;overflow:hidden;
-transition:background .25s,border-color .25s}
+.xmodel{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;overflow:hidden}
+@media(max-width:700px){.xmodel{grid-template-columns:1fr}}
+.xstage{border:1px solid rgba(14,165,233,0.2);background:var(--s1);padding:1.4rem 1rem;text-align:center;position:relative;transition:background .25s,border-color .25s;overflow:hidden}
 .xstage:not(:last-child){border-right-color:transparent}
-@media(max-width:720px){.xstage:not(:last-child){border-right-color:rgba(14,165,233,0.18);border-bottom-color:transparent}}
+@media(max-width:700px){.xstage:not(:last-child){border-right-color:rgba(14,165,233,0.2);border-bottom-color:transparent}}
 .xstage:hover{background:var(--s2);border-color:rgba(14,165,233,.45)}
 .xstage:hover:not(:last-child){border-right-color:transparent}
-@media(max-width:720px){.xstage:hover:not(:last-child){border-right-color:rgba(14,165,233,.45)}}
-.xstage::after{content:'';position:absolute;inset:0;
-background:radial-gradient(ellipse at center,rgba(14,165,233,0.07),transparent 70%);
-opacity:0;transition:opacity .3s;pointer-events:none}
+@media(max-width:700px){.xstage:hover:not(:last-child){border-right-color:rgba(14,165,233,.45);border-bottom-color:transparent}}
+.xstage::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(14,165,233,0.06),transparent 70%);opacity:0;transition:opacity .3s}
 .xstage:hover::after{opacity:1}
-.xn{font-family:var(--mono);font-size:.5rem;color:rgba(14,165,233,.5);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.3rem}
-.xname{font-family:var(--disp);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--fg);margin-bottom:.35rem}
-.xdesc{font-size:.63rem;color:var(--fd);line-height:1.6}
-.xarr{position:absolute;right:-10px;top:50%;transform:translateY(-50%);
-z-index:5;font-size:.75rem;color:rgba(14,165,233,.4)}
-@media(max-width:720px){.xarr{display:none}}
+.xn{font-family:var(--mono);font-size:.52rem;color:rgba(14,165,233,.55);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.35rem}
+.xname{font-family:var(--disp);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--fg);margin-bottom:.4rem}
+.xdesc{font-size:.65rem;color:var(--fd);line-height:1.6}
+.xarr{position:absolute;right:-10px;top:50%;transform:translateY(-50%);z-index:2;font-size:.7rem;color:rgba(14,165,233,.4)}
+@media(max-width:700px){.xarr{display:none}}
 
 /* DEPLOYMENT TABLE */
 .dep-wrap{overflow-x:auto}
 .dep-table{width:100%;border-collapse:collapse;font-size:.8rem}
-.dep-table thead tr{border-bottom:1px solid rgba(14,165,233,0.16)}
-.dep-table th{text-align:left;font-family:var(--mono);font-size:.53rem;letter-spacing:.18em;
-text-transform:uppercase;color:var(--fm);padding:.7rem 1rem;font-weight:400;white-space:nowrap}
-.dep-table td{padding:.95rem 1rem;border-bottom:1px solid rgba(255,255,255,.035);vertical-align:middle}
+.dep-table thead tr{border-bottom:1px solid rgba(14,165,233,0.18)}
+.dep-table th{text-align:left;font-family:var(--mono);font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fm);padding:.7rem 1.1rem;font-weight:400;white-space:nowrap}
+.dep-table td{padding:.95rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:middle}
 .dep-table tbody tr{transition:background .2s}
 .dep-table tbody tr:hover td{background:rgba(14,165,233,0.04)}
 .dep-sys{font-weight:600;color:var(--fg);letter-spacing:.02em;font-size:.82rem}
-.dep-role{font-family:var(--mono);font-size:.56rem;color:var(--fm);margin-top:.18rem;text-transform:uppercase;letter-spacing:.08em}
-.dep-url{color:var(--p);text-decoration:none;font-family:var(--mono);font-size:.66rem;letter-spacing:.03em;transition:opacity .2s}
+.dep-role{font-family:var(--mono);font-size:.58rem;color:var(--fm);margin-top:.18rem;text-transform:uppercase;letter-spacing:.08em}
+.dep-url{color:var(--blue);text-decoration:none;font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;transition:opacity .2s}
 .dep-url:hover{opacity:.7;text-decoration:underline}
-.dep-ok{display:inline-flex;align-items:center;gap:.35rem;
-font-family:var(--mono);font-size:.6rem;color:var(--g);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
-.dep-ok-dot{width:5px;height:5px;border-radius:50%;background:var(--g);
-box-shadow:0 0 5px var(--g);animation:pulse 2.6s ease infinite;flex-shrink:0}
-.dep-plat{font-family:var(--mono);font-size:.6rem;color:var(--fm)}
-
-/* REPO */
-.repo{border:1px solid rgba(14,165,233,0.22);
-background:linear-gradient(135deg,rgba(8,14,26,.95),rgba(6,15,30,.9));
-padding:2rem 2.2rem;display:flex;align-items:flex-start;
-justify-content:space-between;gap:2rem;flex-wrap:wrap;
-position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
-.repo:hover{border-color:rgba(14,165,233,.45);box-shadow:0 0 60px rgba(14,165,233,.1)}
-.repo::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
-background:linear-gradient(to right,transparent,rgba(14,165,233,.55),transparent);opacity:.55}
-.repo-eyebrow{font-family:var(--mono);font-size:.53rem;letter-spacing:.2em;text-transform:uppercase;color:var(--p);opacity:.65;margin-bottom:.5rem}
-.repo-name{font-family:var(--disp);font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fg);margin-bottom:.5rem}
-.repo-desc{font-size:.79rem;color:var(--fd);line-height:1.72;max-width:520px}
-.repo-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
-.rtag{font-family:var(--mono);font-size:.53rem;padding:.2rem .6rem;
-border:1px solid rgba(14,165,233,.18);color:rgba(14,165,233,.7);text-transform:uppercase;
-letter-spacing:.1em;transition:border-color .2s,background .2s}
-.rtag:hover{border-color:rgba(14,165,233,.45);background:rgba(14,165,233,.07)}
-.repo-actions{display:flex;flex-direction:column;gap:.6rem;align-items:flex-end;flex-shrink:0}
-@media(max-width:600px){.repo-actions{align-items:flex-start;width:100%}}
-.repo-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.3rem;
-font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
-font-weight:700;text-decoration:none;border:1px solid rgba(14,165,233,.38);
-color:var(--p);background:rgba(14,165,233,.07);
-transition:background .2s,border-color .2s,box-shadow .2s}
-.repo-btn:hover{background:rgba(14,165,233,.17);border-color:var(--p);box-shadow:0 0 22px rgba(14,165,233,.18)}
-.repo-note{font-family:var(--mono);font-size:.56rem;color:var(--fm);text-align:right}
+.dep-ok{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--mono);font-size:.62rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.dep-ok-dot{width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 5px var(--green);animation:sigpulse 2.5s ease infinite;flex-shrink:0}
+.dep-plat{font-family:var(--mono);font-size:.62rem;color:var(--fm)}
 
 /* STACK */
-.stack-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:.7rem}
-.stack-item{border:1px solid rgba(14,165,233,0.13);background:var(--s1);
-padding:.95rem 1.05rem;transition:border-color .25s,background .25s,transform .25s}
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.75rem}
+.stack-item{border:1px solid rgba(14,165,233,0.14);background:var(--s1);padding:1rem 1.1rem;transition:border-color .25s,background .25s,transform .25s}
 .stack-item:hover{border-color:rgba(14,165,233,.38);background:var(--s2);transform:translateY(-2px)}
-.si-layer{font-family:var(--mono);font-size:.5rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(14,165,233,.55);margin-bottom:.28rem}
-.si-name{font-size:.82rem;font-weight:600;color:var(--fg);margin-bottom:.14rem}
-.si-ver{font-family:var(--mono);font-size:.58rem;color:var(--fm)}
+.si-layer{font-family:var(--mono);font-size:.52rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(14,165,233,.55);margin-bottom:.3rem}
+.si-name{font-size:.84rem;font-weight:600;color:var(--fg);margin-bottom:.15rem}
+.si-ver{font-family:var(--mono);font-size:.6rem;color:var(--fm)}
+
+/* REPO BLOCK */
+.repo{border:1px solid rgba(14,165,233,0.25);background:linear-gradient(135deg,rgba(8,14,26,.95),rgba(6,15,30,.9));padding:2rem 2.2rem;display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;flex-wrap:wrap;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.repo:hover{border-color:rgba(14,165,233,.45);box-shadow:0 0 50px rgba(14,165,233,.1)}
+.repo::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,rgba(14,165,233,.5),transparent);opacity:.5}
+.repo-meta{}
+.repo-eyebrow{font-family:var(--mono);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);opacity:.65;margin-bottom:.55rem}
+.repo-name{font-family:var(--disp);font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fg);margin-bottom:.5rem}
+.repo-desc{font-size:.8rem;color:var(--fd);line-height:1.7;max-width:520px}
+.repo-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.rtag{font-family:var(--mono);font-size:.55rem;padding:.22rem .6rem;border:1px solid rgba(14,165,233,.2);color:rgba(14,165,233,.7);text-transform:uppercase;letter-spacing:.1em;transition:border-color .2s,background .2s}
+.rtag:hover{border-color:rgba(14,165,233,.5);background:rgba(14,165,233,.07)}
+.repo-actions{display:flex;flex-direction:column;gap:.6rem;align-items:flex-end;flex-shrink:0}
+@media(max-width:600px){.repo-actions{align-items:flex-start;width:100%}}
+.repo-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.3rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;text-decoration:none;border:1px solid rgba(14,165,233,.4);color:var(--blue);background:rgba(14,165,233,.08);transition:background .2s,border-color .2s,box-shadow .2s}
+.repo-btn:hover{background:rgba(14,165,233,.18);border-color:var(--blue);box-shadow:0 0 20px rgba(14,165,233,.18)}
+.repo-note{font-family:var(--mono);font-size:.58rem;color:var(--fm);text-align:right}
 
 /* TERMINAL */
-.term{background:#010407;border:1px solid rgba(14,165,233,0.17);overflow:hidden}
-.term-bar{display:flex;align-items:center;gap:.5rem;padding:.75rem 1.2rem;
-border-bottom:1px solid rgba(255,255,255,.05);background:rgba(0,0,0,.3)}
+.term{background:#020508;border:1px solid rgba(14,165,233,0.18);overflow:hidden}
+.term-bar{display:flex;align-items:center;gap:.55rem;padding:.75rem 1.2rem;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(0,0,0,.25)}
 .tb-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 .tb-dot.r{background:#ff5f57}.tb-dot.y{background:#febc2e}.tb-dot.g{background:#28c840}
-.tb-title{font-family:var(--mono);font-size:.56rem;color:var(--fm);margin-left:.4rem;letter-spacing:.1em}
-.term-body{padding:1.4rem 1.6rem;font-family:var(--mono);font-size:.7rem;line-height:2.1}
+.tb-title{font-family:var(--mono);font-size:.58rem;color:var(--fm);margin-left:.4rem;letter-spacing:.1em}
+.term-body{padding:1.4rem 1.6rem;font-family:var(--mono);font-size:.72rem;line-height:2.05}
 .tl{display:block;white-space:pre-wrap;word-break:break-all}
-.tl .pr{color:var(--g);user-select:none}
+.tl .pr{color:var(--green);user-select:none}
 .tl .cm{color:var(--fg)}
 .tl .out{color:rgba(14,165,233,.75)}
-.tl .ok{color:var(--g)}
-.tl .mt{color:var(--fm)}
-.tl.cmt{color:rgba(14,165,233,.3);font-style:italic}
-#tcur{display:inline-block;width:8px;height:.88em;background:var(--p);margin-left:3px;
-vertical-align:middle;animation:blink 1s step-end infinite}
+.tl .ok{color:var(--green)}
+.tl .mt{color:var(--fm);font-size:.65rem}
+.tl.comment{color:rgba(14,165,233,.32);font-style:italic}
+#tcur{display:inline-block;width:8px;height:.88em;background:var(--blue);margin-left:3px;vertical-align:middle;animation:blink 1s step-end infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 
-/* PLATFORM LINKS */
-.platform-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem}
-.pl
+/* IDENTITY FOOTER */
+.id-strip{background:linear-gradient(to right,rgba(14,165,233,0.06),rgba(14,165,233,0.02),rgba(14,165,233,0.06));border:1px solid rgba(14,165,233,0.18);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;margin-bottom:4rem}
+.ids-left{}
+.ids-name{font-family:var(--disp);font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--fg)}
+.ids-roles{font-family:var(--mono);font-size:.62rem;color:var(--fd);letter-spacing:.1em;text-transform:uppercase;margin-top:.35rem;line-height:1.8}
+.ids-right{display:flex;flex-direction:column;gap:.35rem;align-items:flex-end}
+@media(max-width:600px){.ids-right{align-items:flex-start}}
+.ids-link{font-family:var(--mono);font-size:.65rem;color:var(--blue);text-decoration:none;letter-spacing:.06em;opacity:.8;transition:opacity .2s}
+.ids-link:hover{opacity:1}
 
+/* FOOTER */
+footer{border-top:1px solid rgba(14,165,233,0.1);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.f-links{display:flex;gap:1.8rem}
+.f-links a{font-family:var(--mono);font-size:.6rem;color:var(--fm);text-decoration:none;text-transform:uppercase;letter-spacing:.15em;transition:color .2s}
+.f-links a:hover{color:var(--blue)}
+.f-copy{font-family:var(--mono);font-size:.6rem;color:var(--fm);letter-spacing:.08em}
 
-Scroll to latest
+/* REVEAL ANIMATIONS */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.22,.68,0,1.2),transform .7s cubic-bezier(.22,.68,0,1.2)}
+.rv.in{opacity:1;transform:none}
+.rv.fx{transform:translateX(-20px)}
+.rv.sc{transform:scale(.94)}
+@keyframes risef{to{opacity:1;transform:translateY(0)}}
+</style>
+
+</head> <body>
+<canvas id="bg-canvas"></canvas>
+
+<div class="grid-overlay"></div> <div class="vignette"></div> <div class="scan"></div> <nav role="navigation" aria-label="Primary navigation"> <div class="nav-id"> <div class="nav-name" itemprop="name">Fouad Al-Hadi Mahmoud Sendi</div> <div class="nav-role" itemprop="jobTitle">Digital Systems Architect</div> </div> <div class="nav-right"> <div class="nav-signal" aria-label="System status: online"><span class="sig-dot" aria-hidden="true"></span>All Systems Online</div> <div class="nav-clock" id="clk" aria-live="polite" aria-atomic="true"></div> </div> </nav> <div class="page" role="main"> <div class="wrap"> <!-- HERO --> <header class="hero" itemscope itemtype="https://schema.org/Person"> <div class="hero-eyebrow"> <span class="eyebrow-line" aria-hidden="true"></span> <span class="eyebrow-text">Engineering Identity Verification Layer</span> </div> <h1 class="hero-name" itemprop="name"> Fouad Al-Hadi <em class="hero-name-sub">Mahmoud Sendi</em> </h1> <p class="hero-desc" itemprop="description"> <strong>Digital Systems Architect.</strong> Autonomous Systems Designer. Sovereign Software Operator.<br> Creator of <strong>Aegion OS</strong>, <strong>SAAD</strong>, and the <strong>Aurelia</strong> ecosystem. I design and operate structured digital systems that transform complex operational requirements into deterministic, traceable execution models. </p> <div class="hero-grid" role="list" aria-label="System status indicators"> <div class="hstat" role="listitem"> <div class="hstat-lbl">Identity Status</div> <div class="hstat-val"><span class="hval-dot" aria-hidden="true"></span>Verified</div> </div> <div class="hstat" role="listitem"> <div class="hstat-lbl">Repository State</div> <div class="hstat-val"><span class="hval-dot" aria-hidden="true"></span>Active</div> </div> <div class="hstat" role="listitem"> <div class="hstat-lbl">Live Deployments</div> <div class="hstat-val"><span class="hval-dot" aria-hidden="true"></span>4 Online</div> </div> <div class="hstat" role="listitem"> <div class="hstat-lbl">Execution Engine</div> <div class="hstat-val"><span class="hval-dot" aria-hidden="true"></span>Running</div> </div> <div class="hstat" role="listitem"> <div class="hstat-lbl">Session Uptime</div> <div class="hstat-val" id="uptime"><span class="hval-dot" aria-hidden="true"></span><span id="upt-val">00h 00m 00s</span></div> </div> </div> </header> <div class="sdiv"></div> <!-- PROOF SIGNALS --> <section class="sec" aria-labelledby="sec-proof"> <div class="sec-head rv"> <span class="sec-num">01</span> <h2 class="sec-title" id="sec-proof">Proof Signals</h2> <div class="sec-line" aria-hidden="true"></div> </div> <div class="proof-grid"> <article class="pcard rv" style="transition-delay:.04s"> <div class="pcard-corner">SIG-01</div> <div class="pcard-type">Identity Proof</div> <h3 class="pcard-title">Author &amp; System Owner</h3> <p class="pcard-body">Fouad Al-Hadi Mahmoud Sendi is the sole architect, author, and operator of the referenced systems. Real work. Real authorship. Verifiable public presence.</p> <div class="pcard-signal"><span class="psig-dot"></span>Identity Confirmed</div> </article> <article class="pcard rv" style="transition-delay:.09s"> <div class="pcard-corner">SIG-02</div> <div class="pcard-type">Repository Proof</div> <h3 class="pcard-title">SAAD System — GitHub</h3> <p class="pcard-body">A real, committed, documented GitHub repository. Sovereign Autonomous Architecture Design — deterministic execution engine with CLI-based command model.</p> <div class="pcard-signal"><span class="psig-dot"></span>Repository Live</div> <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank" rel="noopener noreferrer" class="pcard-link" itemprop="url">View on GitHub &rarr;</a> </article> <article class="pcard rv" style="transition-delay:.14s"> <div class="pcard-corner">SIG-03</div> <div class="pcard-type">Deployment Proof</div> <h3 class="pcard-title">4 Verified Runtimes</h3> <p class="pcard-body">Multiple live deployments running on Vercel infrastructure. Real interfaces. Real endpoints. Continuously deployed from real repositories. Publicly accessible.</p> <div class="pcard-signal"><span class="psig-dot"></span>Deployments Active</div> </article> <article class="pcard rv" style="transition-delay:.19s"> <div class="pcard-corner">SIG-04</div> <div class="pcard-type">Stack Proof</div> <h3 class="pcard-title">Production Engineering Stack</h3> <p class="pcard-body">Node.js 24, React 19, Vite 7, TypeScript 5.9, Express 5, Drizzle ORM, PostgreSQL. Production-grade tools. Real builds. Verifiable artifact output.</p> <div class="pcard-signal"><span class="psig-dot"></span>Stack Verified</div> </article> </div> </section> <div class="sdiv"></div> <!-- ECOSYSTEM --> <section class="sec" aria-labelledby="sec-eco"> <div class="sec-head rv"> <span class="sec-num">02</span> <h2 class="sec-title" id="sec-eco">System Ecosystem</h2> <div class="sec-line" aria
