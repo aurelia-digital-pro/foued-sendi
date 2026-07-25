@@ -7,18 +7,24 @@
 <title>Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect</title>
 
 <meta name="description" content="Digital Systems Architect | Autonomous Systems Designer | Sovereign Software Operator. I design and operate structured digital systems that transform complex operational requirements into deterministic, traceable execution models.">
-<meta name="keywords" content="Fouad Sendi, Fouad Al-Hadi Mahmoud Sendi, Digital Systems Architect, Autonomous Systems Designer, Aegion OS, SAAD, Sovereign Software Operator, Aurelia V6, Khazna Sigma">
+<meta name="keywords" content="Fouad Sendi, Fouad Al-Hadi Mahmoud Sendi, Digital Systems Architect, Autonomous Systems Designer, Aegion OS, SAAD, WASSAD, Sovereign Software Operator, Aurelia V6, Aurelia Atlas, Aurelia Atlas of Universal Unity, Khazna Sigma, Knowledge Engineering, Systems Architecture, Digital Systems, Digital Identity, Autonomous Systems">
 <meta name="author" content="Fouad Al-Hadi Mahmoud Sendi">
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aurelia-digital-pro.github.io/foued-sendi/">
 
 <meta property="og:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect">
 <meta property="og:description" content="Autonomous Systems Designer | Sovereign Software Operator | Specialist in offline-first AI systems and Aegion OS.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aurelia-digital-pro.github.io/foued-sendi/">
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fouad Al-Hadi Mahmoud Sendi — Digital Systems Architect">
+<meta name="twitter:description" content="Autonomous Systems Designer | Sovereign Software Operator | AURELIA · AEGION OS · SAAD · WASSAD">
+<meta name="twitter:site" content="@foued_sendi">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -30,7 +36,9 @@
   "url":"https://aurelia-digital-pro.github.io/foued-sendi/",
   "sameAs":[
     "https://github.com/aurelia-digital-pro/foued-sendi",
-    "https://www.producthunt.com/@foued_sendi"
+    "https://www.producthunt.com/@foued_sendi",
+    "https://wellfound.com/profile/edit/overview",
+    "https://x.com/foued_sendi?s=11"
   ]
 }
 </script>
@@ -38,8 +46,8 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --p:#0066cc;--bg:#03070f;--fg:#fff;--fd:rgba(255,255,255,.6);
-  --mono:'Space Mono',monospace;--display:'Syncopate',sans-serif;
+  --p:#0066cc;--bg:#03070f;--fg:#fff;--fd:rgba(255,255,255,.6);--gold:#c9a24b;
+  --mono:'Space Mono',monospace;--display:'Syncopate',sans-serif;--arabic:'Amiri',serif;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font-family:var(--mono);overflow-x:hidden}
@@ -50,6 +58,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .nav-status{display:flex;align-items:center;gap:.35rem;font-size:.6rem;color:#22c55e;text-transform:uppercase}
 .nav-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s ease infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* ===== Invocation sections (opening / closing) ===== */
+.invocation{position:relative;text-align:center;padding:5.5rem 2rem;overflow:hidden;isolation:isolate}
+.invocation-open{background:radial-gradient(ellipse at 50% 0%,rgba(201,162,75,.10),transparent 65%),var(--bg);border-bottom:1px solid rgba(201,162,75,.18)}
+.invocation-close{background:radial-gradient(ellipse at 50% 100%,rgba(0,102,204,.14),transparent 65%),var(--bg);border-top:1px solid rgba(0,102,204,.18);border-bottom:1px solid rgba(0,102,204,.18)}
+.invocation::before{content:'';position:absolute;inset:0;z-index:-1;opacity:.5;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:26px 26px}
+.inv-verse{font-family:var(--arabic);direction:rtl;font-size:clamp(1.5rem,3.4vw,2.4rem);line-height:2.1;max-width:780px;margin:0 auto}
+.invocation-open .inv-verse{color:#f1e2bb;text-shadow:0 0 26px rgba(201,162,75,.25)}
+.invocation-close .inv-verse{color:#dce9ff;text-shadow:0 0 26px rgba(0,102,204,.3)}
+.inv-sadaqa{font-family:var(--arabic);direction:rtl;font-size:.95rem;margin-top:1.3rem;color:var(--gold);opacity:.85}
+.invocation-close .inv-sadaqa{color:#7fb2ff}
+.inv-ref{margin-top:.6rem;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fd)}
+
+header{position:relative}
 #hero{position:relative;min-height:100vh}
 #node-canvas{position:absolute;inset:0;width:100%;height:100%}
 #identity{position:relative;z-index:10;padding:9rem 3rem 3rem;max-width:760px;pointer-events:none}
@@ -59,7 +81,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 #cur{display:inline-block;width:7px;height:.95em;background:var(--p);margin-left:3px;animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}}
 .hstat{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.75rem;pointer-events:auto}
-.badge{display:flex;align-items:center;gap:.45rem;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.4);padding:.28rem .72rem;font-size:.65rem;letter-spacing:.1em}
+.badge{display:flex;align-items:center;gap:.45rem;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.4);backdrop-filter:blur(6px);padding:.28rem .72rem;font-size:.65rem;letter-spacing:.1em}
 .bdot{width:6px;height:6px;border-radius:50%;animation:pulse 2s ease infinite}
 .bdot.green{background:#22c55e}.bdot.blue{background:var(--p)}
 #npanel{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:50;border:1px solid rgba(0,102,204,.6);background:rgba(0,5,15,.94);box-shadow:0 0 30px rgba(0,102,204,.32);padding:1.2rem 1.5rem;width:290px;display:none}
@@ -73,44 +95,107 @@ main{position:relative;z-index:10;background:rgba(0,0,0,.5);backdrop-filter:blur
 .sec+.sec{border-top:1px solid rgba(255,255,255,.04)}
 .sec-hd{display:inline-block;border-bottom:2px solid rgba(0,102,204,.3);padding-bottom:.65rem;margin-bottom:3rem}
 .sec-title{font-family:var(--display);font-size:1.4rem;text-transform:uppercase;letter-spacing:.22em}
+
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.proof-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1.4rem;transition:.3s}
+.proof-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1.4rem;transition:.3s;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .proof-card:hover{border-color:rgba(0,102,204,.6);box-shadow:0 0 22px rgba(0,102,204,.2)}
 .pc-icon{font-size:1.5rem;margin-bottom:.75rem}
 .pc-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
 .pc-text{font-size:.7rem;color:var(--fd);line-height:1.65}
-.repo{border:1px solid rgba(0,102,204,.3);background:rgba(0,0,0,.4);padding:1.5rem}
+
+/* ===== Projects — bento layout ===== */
+.bento-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;grid-auto-flow:dense;gap:1rem}
+.proj-card{position:relative;border:1px solid rgba(0,102,204,.22);background:linear-gradient(155deg,rgba(0,102,204,.07),rgba(0,0,0,.45));padding:1.3rem;display:flex;flex-direction:column;justify-content:flex-end;transition:.3s;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.proj-card:hover{border-color:rgba(0,102,204,.65);box-shadow:0 0 26px rgba(0,102,204,.22);transform:translateY(-2px)}
+.proj-card.lg{grid-column:span 2;grid-row:span 2}
+.proj-card.wide{grid-column:span 2}
+.proj-eyebrow{font-size:.58rem;letter-spacing:.16em;color:rgba(0,153,255,.7);text-transform:uppercase;margin-bottom:.4rem}
+.proj-name{font-family:var(--display);font-size:.95rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
+.proj-card.lg .proj-name{font-size:1.3rem}
+.proj-text{font-size:.7rem;color:var(--fd);line-height:1.6}
+
+.pub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.pub-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1.2rem;transition:.3s;display:flex;flex-direction:column;gap:.5rem;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.pub-card:hover{border-color:rgba(0,102,204,.6);box-shadow:0 0 22px rgba(0,102,204,.2)}
+.pub-card-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fg)}
+.pub-card-text{font-size:.68rem;color:var(--fd);line-height:1.6}
+.pub-card a.pub-link{color:var(--p);text-decoration:none;font-size:.7rem;letter-spacing:.08em;word-break:break-all;margin-top:auto}
+.pub-card a.pub-link:hover{text-decoration:underline}
+
+.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.profile-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1.2rem;display:flex;align-items:center;gap:.85rem;transition:.3s;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.profile-card:hover{border-color:rgba(0,102,204,.6);box-shadow:0 0 22px rgba(0,102,204,.2);transform:translateY(-2px)}
+.profile-icon{font-size:1.3rem;color:var(--p)}
+.profile-name{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.profile-card a{color:var(--fd);text-decoration:none;font-size:.62rem;word-break:break-all}
+.profile-card a:hover{color:var(--p)}
+
+.repo{border:1px solid rgba(0,102,204,.3);background:rgba(0,0,0,.4);padding:1.5rem;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .repo-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
 .repo-name{font-family:var(--display);font-size:.9rem;color:var(--p)}
 .repo-tag{display:inline-block;border:1px solid rgba(0,102,204,.4);color:var(--p);font-size:.6rem;padding:.2rem .5rem;margin:.15rem;letter-spacing:.1em}
 .repo-btn{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,102,204,.2);border:1px solid rgba(0,102,204,.5);color:var(--fg);text-decoration:none;padding:.5rem 1rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-top:1rem}
-.dep-table{width:100%;border-collapse:collapse;font-size:.75rem}
-.dep-table th{text-align:left;padding:.6rem;border-bottom:1px solid rgba(0,102,204,.3);color:rgba(0,102,204,.8);text-transform:uppercase;letter-spacing:.15em}
-.dep-table td{padding:.8rem .6rem;border-bottom:1px solid rgba(255,255,255,.05)}
-.dep-table a{color:var(--p);text-decoration:none}
-.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#22c55e;margin-right:.4rem}
-.model-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.5rem}
-.mstage{border:1px solid rgba(0,102,204,.4);background:#060d1a;padding:1rem;text-align:center}
+
+.deploy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.deploy-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1.2rem;transition:.3s;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.deploy-card:hover{border-color:rgba(0,102,204,.6);box-shadow:0 0 22px rgba(0,102,204,.2)}
+.deploy-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem}
+.deploy-icon{font-size:1.2rem}
+.deploy-name{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.35rem}
+.deploy-card a{color:var(--p);text-decoration:none;font-size:.68rem;word-break:break-all}
+.deploy-status{display:inline-flex;align-items:center;gap:.35rem;font-size:.6rem;color:#22c55e;text-transform:uppercase;letter-spacing:.1em}
+.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#22c55e}
+
+/* ===== Execution model — timeline ===== */
+.timeline{position:relative;display:flex;flex-wrap:wrap;gap:1.2rem;padding-top:.5rem}
+.timeline::before{content:'';position:absolute;top:34px;left:0;right:0;height:1px;background:linear-gradient(90deg,rgba(0,102,204,.05),rgba(0,102,204,.5),rgba(0,102,204,.05));z-index:0}
+.tl-node{position:relative;z-index:1;flex:1 1 140px;border:1px solid rgba(0,102,204,.4);background:#060d1a;padding:1rem;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tl-icon{width:34px;height:34px;line-height:34px;margin:0 auto .6rem;border-radius:50%;border:1px solid rgba(0,102,204,.5);background:rgba(0,102,204,.12);font-size:.9rem}
 .msnum{font-size:.58rem;color:rgba(0,102,204,.6);text-transform:uppercase}
 .msname{font-weight:700;text-transform:uppercase;font-size:.85rem;margin:.35rem 0}
-.stack-table{width:100%;font-size:.75rem}
-.stack-table td{padding:.5rem;border-bottom:1px solid rgba(255,255,255,.05)}
-.stack-table td:first-child{color:rgba(0,102,204,.8);width:140px}
+
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+.stack-card{border:1px solid rgba(0,102,204,.2);background:rgba(0,0,0,.4);padding:1rem 1.2rem;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.stack-label{font-size:.6rem;color:rgba(0,102,204,.8);text-transform:uppercase;letter-spacing:.15em;margin-bottom:.4rem}
+.stack-value{font-size:.85rem;font-weight:700}
+
 footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:center;font-size:.67rem;color:rgba(255,255,255,.4)}
-.flinks{display:flex;justify-content:center;gap:2rem;margin-bottom:1rem}
+.flinks{display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;margin-bottom:1rem}
 .flinks a{color:rgba(255,255,255,.4);text-decoration:none;text-transform:uppercase;letter-spacing:.15em}
 .flinks a:hover{color:var(--p)}
 .rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
 .rv.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .bento-grid{grid-template-columns:repeat(2,1fr)}
+  .proj-card.lg{grid-column:span 2;grid-row:span 1}
+  .proj-card.wide{grid-column:span 2}
+}
+@media(max-width:560px){
+  .sec{padding:3.5rem 1.25rem}
+  .bento-grid{grid-template-columns:1fr}
+  .proj-card.lg,.proj-card.wide{grid-column:span 1}
+}
+@media(prefers-reduced-motion:reduce){
+  #scan,.nav-dot,.bdot{animation:none}
+  .rv{transition:none;opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <div id="scan"></div>
+<header>
 <nav>
   <div class="nav-brand">Fouad Al-Hadi Mahmoud Sendi</div>
   <div class="nav-status"><span class="nav-dot"></span>System Online</div>
   <div id="clock">--:--:--</div>
 </nav>
+
+<section id="invocation-open" class="invocation invocation-open" aria-label="Opening invocation">
+  <p class="inv-verse" lang="ar" dir="rtl">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</p>
+  <p class="inv-sadaqa" lang="ar" dir="rtl">صدق الله العظيم</p>
+  <p class="inv-ref">Surah Ta-Ha — Ayah 114</p>
+</section>
 
 <section id="hero">
   <canvas id="node-canvas"></canvas>
@@ -132,20 +217,148 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
     <button id="npclose">[ CLOSE ]</button>
   </div>
 </section>
+</header>
 
 <main>
-  <div class="sec">
-    <div class="sec-hd rv"><h2 class="sec-title">Proof Signals</h2></div>
+  <section class="sec" id="proof" aria-labelledby="proof-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="proof-title">Proof Signals</h2></div>
     <div class="proof-grid">
-      <div class="proof-card rv"><div class="pc-icon">⬡</div><div class="pc-title">Repository Proof</div><div class="pc-text">Public GitHub architecture. CI/CD pipelines active. Commit history verifiable.</div></div>
-      <div class="proof-card rv"><div class="pc-icon">◈</div><div class="pc-title">Engine Proof</div><div class="pc-text">Deterministic execution model. Traceable state management. No black-box systems.</div></div>
-      <div class="proof-card rv"><div class="pc-icon">▣</div><div class="pc-title">Deployment Proof</div><div class="pc-text">4 live Vercel systems. Production-grade infrastructure. Zero-downtime architecture.</div></div>
-      <div class="proof-card rv"><div class="pc-icon">◎</div><div class="pc-title">Stack Proof</div><div class="pc-text">Modern TypeScript + React 19 + Vite 7. Edge-optimized runtime. Full observability.</div></div>
+      <article class="proof-card rv"><div class="pc-icon">⬡</div><div class="pc-title">Repository Proof</div><div class="pc-text">Public GitHub architecture. CI/CD pipelines active. Commit history verifiable.</div></article>
+      <article class="proof-card rv"><div class="pc-icon">◈</div><div class="pc-title">Engine Proof</div><div class="pc-text">Deterministic execution model. Traceable state management. No black-box systems.</div></article>
+      <article class="proof-card rv"><div class="pc-icon">▣</div><div class="pc-title">Deployment Proof</div><div class="pc-text">4 live Vercel systems. Production-grade infrastructure. Zero-downtime architecture.</div></article>
+      <article class="proof-card rv"><div class="pc-icon">◎</div><div class="pc-title">Stack Proof</div><div class="pc-text">Modern TypeScript + React 19 + Vite 7. Edge-optimized runtime. Full observability.</div></article>
     </div>
-  </div>
+  </section>
 
-  <div class="sec">
-    <div class="sec-hd rv"><h2 class="sec-title">Repository Verification</h2></div>
+  <section class="sec" id="projects" aria-labelledby="projects-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="projects-title">Projects</h2></div>
+    <div class="bento-grid">
+      <article class="proj-card lg rv">
+        <div class="proj-eyebrow">Knowledge Layer</div>
+        <div class="proj-name">AURELIA</div>
+        <div class="proj-text">The foundational knowledge system — organizing, linking, and structuring information into the Atlas of Universal Unity.</div>
+      </article>
+      <article class="proj-card wide rv">
+        <div class="proj-eyebrow">Runtime</div>
+        <div class="proj-name">AEGION OS</div>
+        <div class="proj-text">An experimental operating system for autonomous agents — orchestrating reasoning, memory, and execution.</div>
+      </article>
+      <article class="proj-card rv">
+        <div class="proj-eyebrow">Sovereign Memory</div>
+        <div class="proj-name">SAAD</div>
+        <div class="proj-text">Offline-first, deterministic memory management — independent of cloud dependency.</div>
+      </article>
+      <article class="proj-card rv">
+        <div class="proj-eyebrow">Sovereign Memory</div>
+        <div class="proj-name">WASSAD</div>
+        <div class="proj-text">Project and decision tracking within the sovereign memory system — portable and local-first.</div>
+      </article>
+      <article class="proj-card wide rv">
+        <div class="proj-eyebrow">Digital Assets</div>
+        <div class="proj-name">Khazna</div>
+        <div class="proj-text">Structured storage and long-term organization of digital assets and content.</div>
+      </article>
+      <article class="proj-card rv">
+        <div class="proj-eyebrow">Financial Systems</div>
+        <div class="proj-name">ASAD GOLD IES PRO</div>
+        <div class="proj-text">Institutional Execution System — trading indicators built for disciplined market decisions.</div>
+      </article>
+      <article class="proj-card rv">
+        <div class="proj-eyebrow">Digital Identity</div>
+        <div class="proj-name">AURELIA Identity</div>
+        <div class="proj-text">A single-page digital identity platform for professionals, institutions, and independent builders.</div>
+      </article>
+      <article class="proj-card rv">
+        <div class="proj-eyebrow">Publication</div>
+        <div class="proj-name">AURELIA Atlas</div>
+        <div class="proj-text">The published knowledge architecture of AURELIA, available in Arabic and English editions.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="publications" aria-labelledby="publications-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="publications-title">Publications</h2></div>
+    <div class="pub-grid">
+      <article class="pub-card rv">
+        <div class="pub-card-title">AURELIA — Atlas of Universal Unity (Arabic Edition)</div>
+        <div class="pub-card-text">The complete Arabic edition of the AURELIA knowledge atlas.</div>
+        <a class="pub-link" href="https://archive.org/details/aurelia-3" target="_blank">Read on archive.org →</a>
+      </article>
+      <article class="pub-card rv">
+        <div class="pub-card-title">AURELIA — Atlas of Universal Unity (English Edition)</div>
+        <div class="pub-card-text">The English edition of the AURELIA knowledge atlas, published 2026.</div>
+        <a class="pub-link" href="https://archive.org/details/aurelia-atlas-of-universal-unity-english-edition-2026-1" target="_blank">Read on archive.org →</a>
+      </article>
+      <article class="pub-card rv">
+        <div class="pub-card-title">AURELIA — Technical Documentation v1.0 (2026)</div>
+        <div class="pub-card-text">Formal technical documentation covering the AURELIA system architecture.</div>
+        <a class="pub-link" href="https://archive.org/details/aurelia-technical-documentation-v-1.0-2026-1" target="_blank">Read on archive.org →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="profiles" aria-labelledby="profiles-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="profiles-title">Professional Profiles</h2></div>
+    <div class="profile-grid">
+      <article class="profile-card rv">
+        <div class="profile-icon">⬡</div>
+        <div>
+          <div class="profile-name">GitHub</div>
+          <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank">github.com/aurelia-digital-pro</a>
+        </div>
+      </article>
+      <article class="profile-card rv">
+        <div class="profile-icon">◈</div>
+        <div>
+          <div class="profile-name">Wellfound</div>
+          <a href="https://wellfound.com/profile/edit/overview" target="_blank">wellfound.com/profile</a>
+        </div>
+      </article>
+      <article class="profile-card rv">
+        <div class="profile-icon">✕</div>
+        <div>
+          <div class="profile-name">X (Twitter)</div>
+          <a href="https://x.com/foued_sendi?s=11" target="_blank">x.com/foued_sendi</a>
+        </div>
+      </article>
+      <article class="profile-card rv">
+        <div class="profile-icon">▣</div>
+        <div>
+          <div class="profile-name">Product Hunt</div>
+          <a href="https://www.producthunt.com/@foued_sendi" target="_blank">producthunt.com/@foued_sendi</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="deployments" aria-labelledby="deployments-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="deployments-title">Live Systems</h2></div>
+    <div class="deploy-grid">
+      <article class="deploy-card rv">
+        <div class="deploy-top"><span class="deploy-icon">⬢</span><span class="deploy-status"><span class="status-dot"></span>Live</span></div>
+        <div class="deploy-name">Aurelia V6</div>
+        <a href="https://aurelia-v6.vercel.app/" target="_blank">aurelia-v6.vercel.app</a>
+      </article>
+      <article class="deploy-card rv">
+        <div class="deploy-top"><span class="deploy-icon">◎</span><span class="deploy-status"><span class="status-dot"></span>Live</span></div>
+        <div class="deploy-name">Khazna Sigma</div>
+        <a href="https://khazna-sigma.vercel.app/" target="_blank">khazna-sigma.vercel.app</a>
+      </article>
+      <article class="deploy-card rv">
+        <div class="deploy-top"><span class="deploy-icon">▣</span><span class="deploy-status"><span class="status-dot"></span>Live</span></div>
+        <div class="deploy-name">Commerce Main</div>
+        <a href="https://commerce-main-cyan.vercel.app/" target="_blank">commerce-main-cyan.vercel.app</a>
+      </article>
+      <article class="deploy-card rv">
+        <div class="deploy-top"><span class="deploy-icon">◈</span><span class="deploy-status"><span class="status-dot"></span>Live</span></div>
+        <div class="deploy-name">Gitcoin Apps</div>
+        <a href="https://gitcoin-co-30.vercel.app/apps" target="_blank">gitcoin-co-30.vercel.app</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="architecture" aria-labelledby="architecture-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="architecture-title">Architecture</h2></div>
     <div class="repo rv">
       <div class="repo-h">
         <div class="repo-name">aurelia-digital-pro/foued-sendi</div>
@@ -162,52 +375,50 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
       </div>
       <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank" class="repo-btn">View Repository →</a>
     </div>
-  </div>
+  </section>
 
-  <div class="sec">
-    <div class="sec-hd rv"><h2 class="sec-title">Live Deployments</h2></div>
-    <table class="dep-table rv">
-      <thead><tr><th>System</th><th>URL</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr><td>Aurelia V6</td><td><a href="https://aurelia-v6.vercel.app/" target="_blank">aurelia-v6.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
-        <tr><td>Khazna Sigma</td><td><a href="https://khazna-sigma.vercel.app/" target="_blank">khazna-sigma.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
-        <tr><td>Commerce Main</td><td><a href="https://commerce-main-cyan.vercel.app/" target="_blank">commerce-main-cyan.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
-        <tr><td>Gitcoin Apps</td><td><a href="https://gitcoin-co-30.vercel.app/apps" target="_blank">gitcoin-co-30.vercel.app</a></td><td><span class="status-dot"></span>Live</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="sec-hd rv"><h2 class="sec-title">Execution Model</h2></div>
-    <div class="model-grid rv">
-      <div class="mstage"><div class="msnum">01</div><div class="msname">Origin</div></div>
-      <div class="mstage"><div class="msnum">02</div><div class="msname">Observe</div></div>
-      <div class="mstage"><div class="msnum">03</div><div class="msname">Decide</div></div>
-      <div class="mstage"><div class="msnum">04</div><div class="msname">Act</div></div>
-      <div class="mstage"><div class="msnum">05</div><div class="msname">Verify</div></div>
+  <section class="sec" id="execution" aria-labelledby="execution-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="execution-title">Execution Model</h2></div>
+    <div class="timeline rv">
+      <div class="tl-node"><div class="tl-icon">⊙</div><div class="msnum">01</div><div class="msname">Origin</div></div>
+      <div class="tl-node"><div class="tl-icon">◎</div><div class="msnum">02</div><div class="msname">Observe</div></div>
+      <div class="tl-node"><div class="tl-icon">⬢</div><div class="msnum">03</div><div class="msname">Decide</div></div>
+      <div class="tl-node"><div class="tl-icon">⚡</div><div class="msnum">04</div><div class="msname">Act</div></div>
+      <div class="tl-node"><div class="tl-icon">✓</div><div class="msnum">05</div><div class="msname">Verify</div></div>
     </div>
-  </div>
+  </section>
 
-  <div class="sec">
-    <div class="sec-hd rv"><h2 class="sec-title">Build & Runtime Stack</h2></div>
-    <table class="stack-table rv">
-      <tr><td>Runtime</td><td>Node 24.x LTS</td></tr>
-      <tr><td>Framework</td><td>React 19.x</td></tr>
-      <tr><td>Build Tool</td><td>Vite 7.x</td></tr>
-      <tr><td>Language</td><td>TypeScript 5.x</td></tr>
-      <tr><td>Animation</td><td>GSAP 3.x + Three.js</td></tr>
-      <tr><td>Styling</td><td>Tailwind CSS 4.x</td></tr>
-      <tr><td>Deploy</td><td>Vercel Edge Network</td></tr>
-    </table>
-  </div>
+  <section class="sec" id="stack" aria-labelledby="stack-title">
+    <div class="sec-hd rv"><h2 class="sec-title" id="stack-title">Build &amp; Runtime Stack</h2></div>
+    <div class="stack-grid rv">
+      <div class="stack-card"><div class="stack-label">Runtime</div><div class="stack-value">Node 24.x LTS</div></div>
+      <div class="stack-card"><div class="stack-label">Framework</div><div class="stack-value">React 19.x</div></div>
+      <div class="stack-card"><div class="stack-label">Build Tool</div><div class="stack-value">Vite 7.x</div></div>
+      <div class="stack-card"><div class="stack-label">Language</div><div class="stack-value">TypeScript 5.x</div></div>
+      <div class="stack-card"><div class="stack-label">Animation</div><div class="stack-value">GSAP 3.x + Three.js</div></div>
+      <div class="stack-card"><div class="stack-label">Styling</div><div class="stack-value">Tailwind CSS 4.x</div></div>
+      <div class="stack-card"><div class="stack-label">Deploy</div><div class="stack-value">Vercel Edge Network</div></div>
+    </div>
+  </section>
 </main>
+
+<section id="invocation-close" class="invocation invocation-close" aria-label="Closing invocation">
+  <p class="inv-verse" lang="ar" dir="rtl">﴿ الرَّحْمَٰنُ عَلَى الْعَرْشِ اسْتَوَىٰ ﴾</p>
+  <p class="inv-sadaqa" lang="ar" dir="rtl">صدق الله العظيم</p>
+  <p class="inv-ref">Surah Ta-Ha — Ayah 5</p>
+</section>
 
 <footer>
   <div class="flinks">
     <a href="https://github.com/aurelia-digital-pro/foued-sendi" target="_blank">GitHub</a>
     <a href="https://www.producthunt.com/@foued_sendi" target="_blank">Product Hunt</a>
+    <a href="https://wellfound.com/profile/edit/overview" target="_blank">Wellfound</a>
+    <a href="https://x.com/foued_sendi?s=11" target="_blank">X</a>
     <a href="https://aurelia-v6.vercel.app/" target="_blank">Aurelia V6</a>
     <a href="https://khazna-sigma.vercel.app/" target="_blank">Khazna Sigma</a>
+    <a href="https://archive.org/details/aurelia-3" target="_blank">Atlas (Arabic)</a>
+    <a href="https://archive.org/details/aurelia-atlas-of-universal-unity-english-edition-2026-1" target="_blank">Atlas (English)</a>
+    <a href="https://archive.org/details/aurelia-technical-documentation-v-1.0-2026-1" target="_blank">Technical Documentation</a>
   </div>
   <p>SOVEREIGN EXECUTION LAYER // <span id="yr"></span> // FOUAD AL-HADI MAHMOUD SENDI</p>
 </footer>
@@ -216,11 +427,13 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
 (function(){
   'use strict';
   const startTime = Date.now();
-  
+
   function tick(){
     const n=new Date(),pad=x=>String(x).padStart(2,'0');
-    document.getElementById('clock').textContent=pad(n.getUTCHours())+':'+pad(n.getUTCMinutes())+':'+pad(n.getUTCSeconds())+' UTC';
-    
+    const tunis=new Intl.DateTimeFormat('en-GB',{timeZone:'Africa/Tunis',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(n);
+    const get=t=>tunis.find(p=>p.type===t).value;
+    document.getElementById('clock').textContent=get('hour')+':'+get('minute')+':'+get('second')+' Tunis';
+
     const elapsed = Math.floor((Date.now() - startTime) / 1000);
     const h = Math.floor(elapsed / 3600);
     const m = Math.floor((elapsed % 3600) / 60);
@@ -229,15 +442,15 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
   }
   tick(); setInterval(tick,1000);
   document.getElementById('yr').textContent=new Date().getFullYear();
-  
+
   const full='Digital Systems Architect | Autonomous Systems Designer | Sovereign Software Operator';
   let i=0,tw=document.getElementById('tw');
   function type(){if(i<full.length){tw.textContent+=full[i++];setTimeout(type,42);}}
   setTimeout(type,800);
-  
+
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-  
+
   const canvas=document.getElementById('node-canvas');
   const ctx=canvas.getContext('2d');
   let W,H,nodes=[],mx=-999,my=-999,hov=null;
@@ -245,7 +458,7 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
   const nptitle=document.getElementById('nptitle');
   const npdesc=document.getElementById('npdesc');
   document.getElementById('npclose').addEventListener('click',()=>npanel.classList.remove('on'));
-  
+
   const nodeData=[
     {label:'OBSERVATION',desc:'Data intake, environment sensing and signal capture'},
     {label:'MEASUREMENT',desc:'Quantifying system state, delta calculation and tracking'},
@@ -253,7 +466,7 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
     {label:'ACTION',desc:'State mutation, execution and deployment trigger'},
     {label:'VERIFICATION',desc:'End-to-end tracing, auditing and result confirmation'}
   ];
-  
+
   function resize(){
     W=canvas.width=window.innerWidth;
     H=canvas.height=window.innerHeight;
@@ -269,7 +482,7 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
     }
   }
   resize(); window.addEventListener('resize',resize);
-  
+
   canvas.addEventListener('mousemove',e=>{const r=canvas.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;});
   canvas.addEventListener('mouseleave',()=>{mx=-999;my=-999;});
   canvas.addEventListener('click',e=>{
@@ -284,11 +497,11 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
     }
     npanel.classList.remove('on');
   });
-  
+
   function draw(){
     ctx.clearRect(0,0,W,H);
     let nh=null;
-    
+
     nodes.forEach((n,i)=>{
       n.x+=n.vx; n.y+=n.vy;
       if(n.x<0||n.x>W)n.vx*=-1;
@@ -296,9 +509,9 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
       const dx=mx-n.x,dy=my-n.y;
       if(Math.sqrt(dx*dx+dy*dy)<25)nh=i;
     });
-    
+
     if(hov!==nh){hov=nh;canvas.style.cursor=hov!==null?'pointer':'default';}
-    
+
     for(let i=0;i<nodes.length;i++){
       for(let j=i+1;j<nodes.length;j++){
         const a=nodes[i],b=nodes[j],act=hov===i||hov===j;
@@ -310,7 +523,7 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
         }
       }
     }
-    
+
     nodes.forEach((n,i)=>{
       const isH=hov===i,r=isH?8:4;
       const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,r*3);
@@ -320,7 +533,7 @@ footer{border-top:1px solid rgba(0,102,204,.2);padding:2.5rem 1.5rem;text-align:
       ctx.fillStyle=isH?'#55bbff':'#0066cc';
       ctx.beginPath();ctx.arc(n.x,n.y,r,0,Math.PI*2);ctx.fill();
     });
-    
+
     requestAnimationFrame(draw);
   }
   draw();
